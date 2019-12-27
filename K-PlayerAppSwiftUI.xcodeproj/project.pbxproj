@@ -14,7 +14,7 @@
 		1652AB1B238DD979001C21E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1652AB1A238DD979001C21E2 /* Preview Assets.xcassets */; };
 		1652AB1E238DD979001C21E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1652AB1C238DD979001C21E2 /* LaunchScreen.storyboard */; };
 		16BB059423B6B42300E51A00 /* PlaylistIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB059323B6B42300E51A00 /* PlaylistIcons.swift */; };
-		16BB059623B6B69300E51A00 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 16BB059523B6B69300E51A00 /* GoogleService-Info (1).plist */; };
+		16BB059C23B6B9D500E51A00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16BB059B23B6B9D500E51A00 /* GoogleService-Info.plist */; };
 		46BD9A7BBD248D6A9F868F6D /* Pods_K_PlayerAppSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AFAC94ACB0D912D41523A0 /* Pods_K_PlayerAppSwiftUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		1652AB1D238DD979001C21E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1652AB1F238DD979001C21E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16BB059323B6B42300E51A00 /* PlaylistIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistIcons.swift; sourceTree = "<group>"; };
-		16BB059523B6B69300E51A00 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		16BB059B23B6B9D500E51A00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		61E2B0F6A2331C6DB8AE339F /* Pods-K-PlayerAppSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K-PlayerAppSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-K-PlayerAppSwiftUI/Pods-K-PlayerAppSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		89AFAC94ACB0D912D41523A0 /* Pods_K_PlayerAppSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_PlayerAppSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE3E0CB2D5A4655B66F3AAE /* Pods-K-PlayerAppSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K-PlayerAppSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-K-PlayerAppSwiftUI/Pods-K-PlayerAppSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 				1652AB17238DD979001C21E2 /* Assets.xcassets */,
 				1652AB1C238DD979001C21E2 /* LaunchScreen.storyboard */,
 				1652AB1F238DD979001C21E2 /* Info.plist */,
-				16BB059523B6B69300E51A00 /* GoogleService-Info (1).plist */,
+				16BB059B23B6B9D500E51A00 /* GoogleService-Info.plist */,
 				1652AB19238DD979001C21E2 /* Preview Content */,
 			);
 			path = "K-PlayerAppSwiftUI";
@@ -166,9 +166,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1652AB1E238DD979001C21E2 /* LaunchScreen.storyboard in Resources */,
+				16BB059C23B6B9D500E51A00 /* GoogleService-Info.plist in Resources */,
 				1652AB1B238DD979001C21E2 /* Preview Assets.xcassets in Resources */,
 				1652AB18238DD979001C21E2 /* Assets.xcassets in Resources */,
-				16BB059623B6B69300E51A00 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
