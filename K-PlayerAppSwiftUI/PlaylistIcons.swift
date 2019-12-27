@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct PlaylistIcons: View {
     var body: some View {
