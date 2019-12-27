@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1652AB12238DD978001C21E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652AB11238DD978001C21E2 /* AppDelegate.swift */; };
 		1652AB14238DD978001C21E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652AB13238DD978001C21E2 /* SceneDelegate.swift */; };
-		1652AB16238DD978001C21E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652AB15238DD978001C21E2 /* ContentView.swift */; };
+		1652AB16238DD978001C21E2 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652AB15238DD978001C21E2 /* WelcomeScreen.swift */; };
 		1652AB18238DD979001C21E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1652AB17238DD979001C21E2 /* Assets.xcassets */; };
 		1652AB1B238DD979001C21E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1652AB1A238DD979001C21E2 /* Preview Assets.xcassets */; };
 		1652AB1E238DD979001C21E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1652AB1C238DD979001C21E2 /* LaunchScreen.storyboard */; };
+		16BB059423B6B42300E51A00 /* PlaylistIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB059323B6B42300E51A00 /* PlaylistIcons.swift */; };
 		46BD9A7BBD248D6A9F868F6D /* Pods_K_PlayerAppSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AFAC94ACB0D912D41523A0 /* Pods_K_PlayerAppSwiftUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +21,12 @@
 		1652AB0E238DD978001C21E2 /* K-PlayerAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "K-PlayerAppSwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1652AB11238DD978001C21E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1652AB13238DD978001C21E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1652AB15238DD978001C21E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1652AB15238DD978001C21E2 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		1652AB17238DD979001C21E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1652AB1A238DD979001C21E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1652AB1D238DD979001C21E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1652AB1F238DD979001C21E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16BB059323B6B42300E51A00 /* PlaylistIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistIcons.swift; sourceTree = "<group>"; };
 		61E2B0F6A2331C6DB8AE339F /* Pods-K-PlayerAppSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K-PlayerAppSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-K-PlayerAppSwiftUI/Pods-K-PlayerAppSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		89AFAC94ACB0D912D41523A0 /* Pods_K_PlayerAppSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_PlayerAppSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE3E0CB2D5A4655B66F3AAE /* Pods-K-PlayerAppSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K-PlayerAppSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-K-PlayerAppSwiftUI/Pods-K-PlayerAppSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,7 +67,8 @@
 			children = (
 				1652AB11238DD978001C21E2 /* AppDelegate.swift */,
 				1652AB13238DD978001C21E2 /* SceneDelegate.swift */,
-				1652AB15238DD978001C21E2 /* ContentView.swift */,
+				1652AB15238DD978001C21E2 /* WelcomeScreen.swift */,
+				16BB059323B6B42300E51A00 /* PlaylistIcons.swift */,
 				1652AB17238DD979001C21E2 /* Assets.xcassets */,
 				1652AB1C238DD979001C21E2 /* LaunchScreen.storyboard */,
 				1652AB1F238DD979001C21E2 /* Info.plist */,
@@ -96,7 +99,6 @@
 				61E2B0F6A2331C6DB8AE339F /* Pods-K-PlayerAppSwiftUI.debug.xcconfig */,
 				9BE3E0CB2D5A4655B66F3AAE /* Pods-K-PlayerAppSwiftUI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -215,9 +217,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16BB059423B6B42300E51A00 /* PlaylistIcons.swift in Sources */,
 				1652AB12238DD978001C21E2 /* AppDelegate.swift in Sources */,
 				1652AB14238DD978001C21E2 /* SceneDelegate.swift in Sources */,
-				1652AB16238DD978001C21E2 /* ContentView.swift in Sources */,
+				1652AB16238DD978001C21E2 /* WelcomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
