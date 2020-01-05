@@ -11,21 +11,10 @@ import SwiftUI
 struct WelcomeScreen: View {
     var body: some View {
         
-        //Header
+        //Welcome to K-Player!
         VStack {
-            ZStack {
-                    
-                Rectangle()
-                    .frame(width: 380, height: 200)
-                    .cornerRadius(10)
-                Text("Welcome to K-Player!")
-                    .font(.title)
-                    .foregroundColor(.white)
-                
-            }
-            .offset(y: -280)
-            
-            
+            PlaylistIcons()
+                .offset(y: -280)
         }
     }
 }
