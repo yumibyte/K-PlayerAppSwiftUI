@@ -10,7 +10,16 @@ import SwiftUI
 
 struct HeaderDetail: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Rectangle()
+                .frame(width: 365, height: 225)
+                .foregroundColor(.blue)
+                .cornerRadius(10)
+            Text("Welcome To K-Player!")
+                .font(.largeTitle)
+                .foregroundColor(.white)
+            
+        }
     }
 }
 

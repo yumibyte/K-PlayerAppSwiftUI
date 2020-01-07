@@ -7,20 +7,34 @@
 //
 
 import SwiftUI
-import Firebase
 
 struct PlaylistIcons: View {
     var body: some View {
-        ZStack {
+        
+        ZStack(alignment:.bottomLeading) {
             Rectangle()
-                .frame(width: 365, height: 225)
-                .foregroundColor(.blue)
+                .frame(width: 200, height: 200)
                 .cornerRadius(10)
-            Text("Welcome To K-Player!")
-                .font(.largeTitle)
-                .foregroundColor(.white)
+                .foregroundColor(.gray)
+            //fade
+            Rectangle()
+                .frame(width:150, height: 30)
+                .opacity(0.20)
+            .blur(radius: 10)
+                .padding(8)
             
+            HStack {
+                VStack() {
+                    Text("Spanish Playlist")
+                        .foregroundColor(.white)
+                        .font(.body)
+                }
+                .padding(.leading)
+                .padding(.bottom)
+            }
+        
         }
+       
     }
 }
 

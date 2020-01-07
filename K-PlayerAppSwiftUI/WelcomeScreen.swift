@@ -13,8 +13,10 @@ struct WelcomeScreen: View {
         
         //Welcome to K-Player!
         VStack {
-            PlaylistIcons()
+            HeaderDetail()
                 .offset(y: -280)
+            Divider()
+            
         }
     }
 }

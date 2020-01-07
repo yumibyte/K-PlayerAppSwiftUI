@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160A625623C2C3BD00790655 /* HeaderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A625523C2C3BD00790655 /* HeaderDetail.swift */; };
 		1652AB12238DD978001C21E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652AB11238DD978001C21E2 /* AppDelegate.swift */; };
 		1652AB14238DD978001C21E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652AB13238DD978001C21E2 /* SceneDelegate.swift */; };
 		1652AB16238DD978001C21E2 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652AB15238DD978001C21E2 /* WelcomeScreen.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160A625523C2C3BD00790655 /* HeaderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetail.swift; sourceTree = "<group>"; };
 		1652AB0E238DD978001C21E2 /* K-PlayerAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "K-PlayerAppSwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1652AB11238DD978001C21E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1652AB13238DD978001C21E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				1652AB13238DD978001C21E2 /* SceneDelegate.swift */,
 				1652AB15238DD978001C21E2 /* WelcomeScreen.swift */,
 				16BB059323B6B42300E51A00 /* PlaylistIcons.swift */,
+				160A625523C2C3BD00790655 /* HeaderDetail.swift */,
 				1652AB17238DD979001C21E2 /* Assets.xcassets */,
 				1652AB1C238DD979001C21E2 /* LaunchScreen.storyboard */,
 				1652AB1F238DD979001C21E2 /* Info.plist */,
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16BB059423B6B42300E51A00 /* PlaylistIcons.swift in Sources */,
+				160A625623C2C3BD00790655 /* HeaderDetail.swift in Sources */,
 				1652AB12238DD978001C21E2 /* AppDelegate.swift in Sources */,
 				1652AB14238DD978001C21E2 /* SceneDelegate.swift in Sources */,
 				1652AB16238DD978001C21E2 /* WelcomeScreen.swift in Sources */,
