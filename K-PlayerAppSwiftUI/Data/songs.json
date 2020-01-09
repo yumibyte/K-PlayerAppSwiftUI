@@ -1,0 +1,23 @@
+title: String
+var artist: String
+var cover: UIImage
+var level: Int
+var category
+[
+    {
+        "id":1001,
+        "artist": "Shakira",
+        "title": "Hips Don't Lie",
+        "cover": "ShakiraSpanish",
+        "level": "1",
+        "category": "Spanish Videos"
+    },
+    {
+        "id":1002,
+        "artist": "Shakira",
+        "title": "Hips Don't Lie",
+        "cover": "ShakiraIngles",
+        "level": "1",
+        "category": "Ingles Videos"
+    }
+]

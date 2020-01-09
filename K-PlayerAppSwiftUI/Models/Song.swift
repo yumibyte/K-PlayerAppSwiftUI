@@ -8,15 +8,17 @@
 
 import SwiftUI
 
-struct Song {
+struct Song: Hashable, Identifiable {
+    var id: Int
     var title: String
     var artist: String
     var cover: UIImage
     var level: Int
+    var category: Category
 //    var video:
     
     enum Category: String {
         case inglesVideos = "Ingles Videos"
-        case spanishVideos = "spanish Videos"
+        case spanishVideos = "Spanish Videos"
     }
 }

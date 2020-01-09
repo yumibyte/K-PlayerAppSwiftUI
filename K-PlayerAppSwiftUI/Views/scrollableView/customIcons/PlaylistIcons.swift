@@ -9,10 +9,11 @@
 import SwiftUI
 
 struct PlaylistIcons: View {
+    
+    var song: Song
+
     var body: some View {
-        
-        
-        
+                
         ZStack(alignment:.bottomLeading) {
             Rectangle()
                 .frame(width: 200, height: 200)
@@ -27,7 +28,7 @@ struct PlaylistIcons: View {
             
             HStack {
                 VStack() {
-                    Text("Spanish Playlist")
+                    Text(song.title)
                         .foregroundColor(.white)
                         .font(.body)
                 }
@@ -42,6 +43,6 @@ struct PlaylistIcons: View {
 
 struct PlaylistIcons_Previews: PreviewProvider {
     static var previews: some View {
-        PlaylistIcons()
+        PlaylistIcons(song: )
     }
 }

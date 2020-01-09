@@ -10,6 +10,7 @@
 		160A625623C2C3BD00790655 /* HeaderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A625523C2C3BD00790655 /* HeaderDetail.swift */; };
 		160A625C23C4437F00790655 /* PlaylistRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A625B23C4437F00790655 /* PlaylistRow.swift */; };
 		160A625E23C5521100790655 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A625D23C5521100790655 /* Song.swift */; };
+		1627AE9D23C702100087E862 /* songs.json in Resources */ = {isa = PBXBuildFile; fileRef = 1627AE9C23C702100087E862 /* songs.json */; };
 		1652AB12238DD978001C21E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652AB11238DD978001C21E2 /* AppDelegate.swift */; };
 		1652AB14238DD978001C21E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652AB13238DD978001C21E2 /* SceneDelegate.swift */; };
 		1652AB16238DD978001C21E2 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652AB15238DD978001C21E2 /* WelcomeScreen.swift */; };
@@ -25,6 +26,7 @@
 		160A625523C2C3BD00790655 /* HeaderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetail.swift; sourceTree = "<group>"; };
 		160A625B23C4437F00790655 /* PlaylistRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistRow.swift; sourceTree = "<group>"; };
 		160A625D23C5521100790655 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		1627AE9C23C702100087E862 /* songs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = songs.json; sourceTree = "<group>"; };
 		1652AB0E238DD978001C21E2 /* K-PlayerAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "K-PlayerAppSwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1652AB11238DD978001C21E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1652AB13238DD978001C21E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +54,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1627AE9E23C704180087E862 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				160A625D23C5521100790655 /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1627AE9F23C704940087E862 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1652AB1C238DD979001C21E2 /* LaunchScreen.storyboard */,
+				1652AB15238DD978001C21E2 /* WelcomeScreen.swift */,
+				1627AEA123C704DE0087E862 /* scrollableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1627AEA023C704A80087E862 /* customIcons */ = {
+			isa = PBXGroup;
+			children = (
+				16BB059323B6B42300E51A00 /* PlaylistIcons.swift */,
+				160A625523C2C3BD00790655 /* HeaderDetail.swift */,
+			);
+			path = customIcons;
+			sourceTree = "<group>";
+		};
+		1627AEA123C704DE0087E862 /* scrollableView */ = {
+			isa = PBXGroup;
+			children = (
+				1627AEA023C704A80087E862 /* customIcons */,
+				160A625B23C4437F00790655 /* PlaylistRow.swift */,
+			);
+			path = scrollableView;
+			sourceTree = "<group>";
+		};
+		1627AEA223C705250087E862 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16BB059B23B6B9D500E51A00 /* GoogleService-Info.plist */,
+				1652AB1F238DD979001C21E2 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1627AEA323C705510087E862 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1627AE9C23C702100087E862 /* songs.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1627AEA423C7059E0087E862 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1652AB11238DD978001C21E2 /* AppDelegate.swift */,
+				1652AB13238DD978001C21E2 /* SceneDelegate.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		1652AB05238DD978001C21E2 = {
 			isa = PBXGroup;
 			children = (
@@ -73,17 +137,12 @@
 		1652AB10238DD978001C21E2 /* K-PlayerAppSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				1652AB11238DD978001C21E2 /* AppDelegate.swift */,
-				1652AB13238DD978001C21E2 /* SceneDelegate.swift */,
-				1652AB15238DD978001C21E2 /* WelcomeScreen.swift */,
-				16BB059323B6B42300E51A00 /* PlaylistIcons.swift */,
-				160A625D23C5521100790655 /* Song.swift */,
-				160A625B23C4437F00790655 /* PlaylistRow.swift */,
-				160A625523C2C3BD00790655 /* HeaderDetail.swift */,
+				1627AEA423C7059E0087E862 /* Controllers */,
+				1627AE9E23C704180087E862 /* Models */,
+				1627AE9F23C704940087E862 /* Views */,
 				1652AB17238DD979001C21E2 /* Assets.xcassets */,
-				1652AB1C238DD979001C21E2 /* LaunchScreen.storyboard */,
-				1652AB1F238DD979001C21E2 /* Info.plist */,
-				16BB059B23B6B9D500E51A00 /* GoogleService-Info.plist */,
+				1627AEA323C705510087E862 /* Data */,
+				1627AEA223C705250087E862 /* Supporting Files */,
 				1652AB19238DD979001C21E2 /* Preview Content */,
 			);
 			path = "K-PlayerAppSwiftUI";
@@ -175,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1652AB1E238DD979001C21E2 /* LaunchScreen.storyboard in Resources */,
+				1627AE9D23C702100087E862 /* songs.json in Resources */,
 				16BB059C23B6B9D500E51A00 /* GoogleService-Info.plist in Resources */,
 				1652AB1B238DD979001C21E2 /* Preview Assets.xcassets in Resources */,
 				1652AB18238DD979001C21E2 /* Assets.xcassets in Resources */,
