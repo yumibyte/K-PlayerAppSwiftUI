@@ -11,6 +11,8 @@ import SwiftUI
 struct PlaylistIcons: View {
     var body: some View {
         
+        
+        
         ZStack(alignment:.bottomLeading) {
             Rectangle()
                 .frame(width: 200, height: 200)

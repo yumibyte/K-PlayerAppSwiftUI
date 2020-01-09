@@ -12,12 +12,16 @@ struct WelcomeScreen: View {
     var body: some View {
         
         //Welcome to K-Player!
+        
         VStack {
             HeaderDetail()
                 .offset(y: -280)
             Divider()
             
         }
+    
+        
+        
     }
 }
 
