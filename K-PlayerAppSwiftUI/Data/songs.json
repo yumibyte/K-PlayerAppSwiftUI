@@ -1,8 +1,3 @@
-title: String
-var artist: String
-var cover: UIImage
-var level: Int
-var category
 [
     {
         "id":1001,

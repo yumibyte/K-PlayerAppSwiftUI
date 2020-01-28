@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Song: Hashable, Identifiable {
+struct Song: Hashable, Codable, Identifiable {
     var id: Int
     var title: String
     var artist: String
@@ -17,8 +17,15 @@ struct Song: Hashable, Identifiable {
     var category: Category
 //    var video:
     
-    enum Category: String {
+    enum Category: String, CaseIterable, Codable, Hashable {
         case inglesVideos = "Ingles Videos"
         case spanishVideos = "Spanish Videos"
     }
+    
+    
+//    init(from decoder:Decoder) throws {
+//        let values = try decoder.container(keyedBy: Category.self)
+//        let inglesVideos = try values.decode([Int].self, forKey: .inglesVideos)
+//        let spanishVideos = try values.decode(Int.self, forKey: .spanishVideos)
+//    }
 }

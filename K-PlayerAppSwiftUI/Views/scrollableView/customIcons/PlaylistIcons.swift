@@ -43,6 +43,6 @@ struct PlaylistIcons: View {
 
 struct PlaylistIcons_Previews: PreviewProvider {
     static var previews: some View {
-        PlaylistIcons(song: )
+        PlaylistIcons(song: songData[0])
     }
 }
