@@ -9,15 +9,25 @@
 import SwiftUI
 
 struct PlaylistRow: View {
+    
+    let categoryName: String
+    let songs: [Song]
+    
     var body: some View {
         VStack() {
             
             Text("LPs Playlists")
-                .font(.title)
+            self.font(.headline)
+            
+            
             
             ScrollView(.horizontal, showsIndicators: false) {
-                PlaylistIcons()
-                PlaylistIcons()
+                HStack() {
+                    ForEach(self.songs, id: self.title) { song in
+                        NavigationLink(destination: PlaylistIcons(song: song))
+                            
+                    }
+                }
             }
             
         }
@@ -26,6 +36,6 @@ struct PlaylistRow: View {
 
 struct PlaylistRow_Previews: PreviewProvider {
     static var previews: some View {
-        PlaylistRow()
+        PlaylistRow(categoryName: "Ingles Videos", songs: songData)
     }
 }

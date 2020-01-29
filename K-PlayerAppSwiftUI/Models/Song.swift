@@ -12,12 +12,12 @@ struct Song: Hashable, Codable, Identifiable {
     var id: Int
     var title: String
     var artist: String
-    var cover: UIImage
+    var cover: String
     var level: Int
     var category: Category
 //    var video:
     
-    enum Category: String, CaseIterable, Codable, Hashable {
+    enum Category: String, Codable, CaseIterable, Hashable {
         case inglesVideos = "Ingles Videos"
         case spanishVideos = "Spanish Videos"
     }
