@@ -23,8 +23,10 @@ struct PlaylistRow: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack() {
-                    ForEach(self.songs, id: self.title) { song in
-                        NavigationLink(destination: PlaylistIcons(song: song))
+                    ForEach(self.songs, id: \.title) { song in
+                        NavigationLink(destination: PlaylistDetails(song: song)) {
+                            PlaylistIcons(song: self.songs.first!)
+                        }
                             
                     }
                 }

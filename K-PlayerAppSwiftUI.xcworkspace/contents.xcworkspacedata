@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/ashleyraigosa/Desktop/Programming/Xcode - swift/K-PlayerAppSwiftUI/K-PlayerAppSwiftUI/Views/scrollableView/customIcons/PlaylistDetails.swift">
+   </FileRef>
+   <FileRef
       location = "group:K-PlayerAppSwiftUI.xcodeproj">
    </FileRef>
    <FileRef
