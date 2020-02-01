@@ -20,6 +20,7 @@ struct HeaderDetail: View {
                 .foregroundColor(.white)
             
         }
+        
     }
 }
 

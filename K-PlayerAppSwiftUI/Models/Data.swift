@@ -6,15 +6,6 @@
 //  Copyright © 2020 Ashley Raigosa. All rights reserved.
 //
 
-import Foundation
-
-//
-//  Data.swift
-//  ComplexSwiftUITutorial
-//
-//  Created by Ashley Raigosa on 11/27/19.
-//  Copyright © 2019 Ashley Raigosa. All rights reserved.
-//
 
 import Foundation
 

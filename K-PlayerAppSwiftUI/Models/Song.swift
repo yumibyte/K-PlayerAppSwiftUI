@@ -21,11 +21,4 @@ struct Song: Hashable, Codable, Identifiable {
         case inglesVideos = "Ingles Videos"
         case spanishVideos = "Spanish Videos"
     }
-    
-    
-//    init(from decoder:Decoder) throws {
-//        let values = try decoder.container(keyedBy: Category.self)
-//        let inglesVideos = try values.decode([Int].self, forKey: .inglesVideos)
-//        let spanishVideos = try values.decode(Int.self, forKey: .spanishVideos)
-//    }
 }
