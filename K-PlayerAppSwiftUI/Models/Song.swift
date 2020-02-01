@@ -10,8 +10,8 @@ import SwiftUI
 
 struct Song: Hashable, Codable, Identifiable {
     var id: Int
-    var title: String
     var artist: String
+    var title: String
     var cover: String
     var level: Int
     var category: Category
