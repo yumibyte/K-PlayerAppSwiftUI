@@ -30,7 +30,6 @@
 		160A625B23C4437F00790655 /* PlaylistRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistRow.swift; sourceTree = "<group>"; };
 		160A625D23C5521100790655 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		1610B68923E177EB00940C01 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		1610B68B23E17E5900940C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "Preview Content/../Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		1610B68C23E17E7300940C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "Preview Content/../Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		1627AE9C23C702100087E862 /* songs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = songs.json; sourceTree = "<group>"; };
 		1652AB0E238DD978001C21E2 /* K-PlayerAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "K-PlayerAppSwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,7 +154,6 @@
 				1627AEA223C705250087E862 /* Supporting Files */,
 				1652AB19238DD979001C21E2 /* Preview Content */,
 				1610B68C23E17E7300940C01 /* Info.plist */,
-				1610B68B23E17E5900940C01 /* Info.plist */,
 			);
 			path = "K-PlayerAppSwiftUI";
 			sourceTree = "<group>";

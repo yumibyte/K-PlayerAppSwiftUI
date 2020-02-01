@@ -8,9 +8,6 @@
       location = "group:K-PlayerAppSwiftUI.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:K-PlayerAppSwiftUI/Preview Content/../Supporting Files/Info.plist">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

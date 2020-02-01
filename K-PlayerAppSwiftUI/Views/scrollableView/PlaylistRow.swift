@@ -17,8 +17,7 @@ struct PlaylistRow: View {
         VStack() {
             
             Text("LPs Playlists")
-            self.font(.headline)
-            
+                self.font(.headline)
             
             
             ScrollView(.horizontal, showsIndicators: false) {

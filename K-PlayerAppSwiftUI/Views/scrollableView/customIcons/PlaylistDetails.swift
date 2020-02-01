@@ -19,6 +19,6 @@ struct PlaylistDetails_Previews: PreviewProvider {
     static var previews: some View {
         
         PlaylistDetails(song: songData[0])
-
+        
     }
 }
