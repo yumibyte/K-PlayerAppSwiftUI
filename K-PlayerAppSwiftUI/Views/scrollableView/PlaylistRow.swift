@@ -20,16 +20,16 @@ struct PlaylistRow: View {
                 self.font(.headline)
             
             
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack() {
-                    ForEach(self.songs, id: \.title) { song in
-                        NavigationLink(destination: PlaylistDetails(song: song)) {
-                            PlaylistIcons(song: self.songs.first!)
-                        }
-                            
-                    }
-                }
-            }
+//            ScrollView(.horizontal, showsIndicators: false) {
+//                HStack() {
+//                    ForEach(self.songs, id: \.title) { song in
+//                        NavigationLink(destination: PlaylistDetails(song: song)) {
+//                            PlaylistIcons(song: self.songs.first!)
+//                        }
+//
+//                    }
+//                }
+//            }
             
         }
     }
