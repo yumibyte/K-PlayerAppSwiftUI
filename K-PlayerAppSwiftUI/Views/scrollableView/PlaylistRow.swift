@@ -19,17 +19,26 @@ struct PlaylistRow: View {
             Text("LPs Playlists")
                 self.font(.headline)
             
-            
-//            ScrollView(.horizontal, showsIndicators: false) {
-//                HStack() {
-//                    ForEach(self.songs, id: \.title) { song in
-//                        NavigationLink(destination: PlaylistDetails(song: song)) {
-//                            PlaylistIcons(song: self.songs.first!)
-//                        }
-//
-//                    }
-//                }
-//            }
+            VStack {
+                HeaderDetail()
+                    .offset(y: -280)
+                Divider()
+
+            }
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack() {
+                    ForEach (self.songs, id: \.title) { songs in
+
+                        NavigationLink(destination: PlaylistDetails(song: songs)) {
+                            PlaylistIcons(song: self.songs.first!)
+                                                           .frame(width: 300)
+                                                           .position(x: 170, y: 130)
+                                                           .padding(.trailing, 30)
+                        }
+
+                    }
+                }
+            }
             
         }
     }
