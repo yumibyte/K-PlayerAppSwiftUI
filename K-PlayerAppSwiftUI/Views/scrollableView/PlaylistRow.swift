@@ -14,17 +14,11 @@ struct PlaylistRow: View {
     let songs: [Song]
     
     var body: some View {
+
         VStack(alignment: .leading) {
-            
             Text(self.categoryName)
                 .font(.title)
             
-            VStack {
-                HeaderDetail()
-                    .offset(y: -280)
-                Divider()
-
-            }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack() {
                     ForEach (self.songs, id: \.title) { song in
