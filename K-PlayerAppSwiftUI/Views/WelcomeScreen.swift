@@ -18,7 +18,9 @@ struct WelcomeScreen: View {
         )
     }
     
+    
     var body: some View {
+//        Text("Hi!")
         NavigationView {
             List(categories.keys.sorted(), id: \String.self) {key in
                 PlaylistRow(categoryName: "\(key)".uppercased(), songs: self.categories[key]!)

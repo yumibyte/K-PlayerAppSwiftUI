@@ -14,10 +14,10 @@ struct PlaylistRow: View {
     let songs: [Song]
     
     var body: some View {
-        VStack() {
+        VStack(alignment: .leading) {
             
-            Text("LPs Playlists")
-                self.font(.headline)
+            Text(self.categoryName)
+                .font(.title)
             
             VStack {
                 HeaderDetail()
@@ -27,9 +27,9 @@ struct PlaylistRow: View {
             }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack() {
-                    ForEach (self.songs, id: \.title) { songs in
+                    ForEach (self.songs, id: \.title) { song in
 
-                        NavigationLink(destination: PlaylistDetails(song: songs)) {
+                        NavigationLink(destination: PlaylistDetails(song: song)) {
                             PlaylistIcons(song: self.songs.first!)
                                                            .frame(width: 300)
                                                            .position(x: 170, y: 130)
