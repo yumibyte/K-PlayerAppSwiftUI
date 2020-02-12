@@ -21,17 +21,17 @@ struct WelcomeScreen: View {
     
     var body: some View {
 //        Text("Hi!")
-        VStack(alignment: .leading) {
-            NavigationView {
-                List(categories.keys.sorted(), id: \String.self) {key in
-                    PlaylistRow(categoryName: "\(key)".uppercased(), songs: self.categories[key]!)
-                        .frame(height: 320)
-                        .padding(.top)
-                        .padding(.bottom)
-                }
-                .navigationBarTitle(Text("LP-Playlists"))
+        
+        NavigationView {
+
+            List(categories.keys.sorted(), id: \String.self) {key in
+                PlaylistRow(categoryName: "\(key)".uppercased(), songs: self.categories[key]!)
+                    .frame(height: 375)
+                    .padding(.bottom)
             }
+            .navigationBarTitle(Text("LP-Playlists"))
         }
+    
         
     }
 }

@@ -13,30 +13,33 @@ struct PlaylistIcons: View {
     var song: Song
 
     var body: some View {
+        VStack(spacing: 16.0) {
+            ZStack(alignment:.bottomLeading) {
+                Rectangle()
+                    .frame(width: 250, height: 250)
+                    .cornerRadius(10)
+                    .foregroundColor(.gray)
+                //fade
+                Rectangle()
+                    .frame(width: 200, height: 50)
+                    .opacity(0.20)
+                    .blur(radius: 10)
+                    .padding(8)
+                    .offset(y: 1)
                 
-        ZStack(alignment:.bottomLeading) {
-            Rectangle()
-                .frame(width: 200, height: 200)
-                .cornerRadius(10)
-                .foregroundColor(.gray)
-            //fade
-            Rectangle()
-                .frame(width:150, height: 30)
-                .opacity(0.20)
-            .blur(radius: 10)
-                .padding(8)
-            
-            HStack {
-                VStack() {
-                    Text(song.title)
-                        .foregroundColor(.white)
-                        .font(.body)
+                HStack {
+                    VStack() {
+                        Text(song.title)
+                            .foregroundColor(.white)
+                            .font(.title)
+                    }
+                    .padding(.leading)
+                    .padding(.bottom)
                 }
-                .padding(.leading)
-                .padding(.bottom)
+                
             }
-        
         }
+        
        
     }
 }

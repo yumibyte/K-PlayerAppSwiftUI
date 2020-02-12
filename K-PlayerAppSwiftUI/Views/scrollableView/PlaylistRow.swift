@@ -14,7 +14,7 @@ struct PlaylistRow: View {
     let songs: [Song]
     
     var body: some View {
-
+        
         VStack(alignment: .leading) {
             Text(self.categoryName)
                 .font(.title)
@@ -25,9 +25,11 @@ struct PlaylistRow: View {
 
                         NavigationLink(destination: PlaylistDetails(song: song)) {
                             PlaylistIcons(song: self.songs.first!)
-                                                           .frame(width: 300)
-                                                           .position(x: 170, y: 130)
-                                                           .padding(.trailing, 30)
+                                
+                                        .frame(width: 300)
+                                        .position(x: 130, y: 160)
+                                        .padding(.leading, 2)
+                            
                         }
 
                     }
