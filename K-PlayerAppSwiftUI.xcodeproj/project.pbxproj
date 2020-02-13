@@ -18,7 +18,7 @@
 		1652AB18238DD979001C21E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1652AB17238DD979001C21E2 /* Assets.xcassets */; };
 		1652AB1B238DD979001C21E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1652AB1A238DD979001C21E2 /* Preview Assets.xcassets */; };
 		1652AB1E238DD979001C21E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1652AB1C238DD979001C21E2 /* LaunchScreen.storyboard */; };
-		16B7A76A23E2B7C90012BFAF /* PlaylistDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B7A76923E2B7C90012BFAF /* PlaylistDetails.swift */; };
+		16B7A76A23E2B7C90012BFAF /* SongDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B7A76923E2B7C90012BFAF /* SongDetail.swift */; };
 		16BB059423B6B42300E51A00 /* PlaylistIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB059323B6B42300E51A00 /* PlaylistIcons.swift */; };
 		16BB059C23B6B9D500E51A00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16BB059B23B6B9D500E51A00 /* GoogleService-Info.plist */; };
 		16CF35E723E01E3900833859 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF35E623E01E3900833859 /* Data.swift */; };
@@ -41,7 +41,7 @@
 		1652AB1A238DD979001C21E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1652AB1D238DD979001C21E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1652AB1F238DD979001C21E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "../Supporting Files/Info.plist"; sourceTree = "<group>"; };
-		16B7A76923E2B7C90012BFAF /* PlaylistDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaylistDetails.swift; path = "/Users/ashleyraigosa/Desktop/Programming/Xcode - swift/K-PlayerAppSwiftUI/K-PlayerAppSwiftUI/Views/scrollableView/customIcons/PlaylistDetails.swift"; sourceTree = "<absolute>"; };
+		16B7A76923E2B7C90012BFAF /* SongDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongDetail.swift; path = "/Users/ashleyraigosa/Desktop/Programming/Xcode - swift/K-PlayerAppSwiftUI/K-PlayerAppSwiftUI/Views/scrollableView/customIcons/SongDetail.swift"; sourceTree = "<absolute>"; };
 		16BB059323B6B42300E51A00 /* PlaylistIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistIcons.swift; sourceTree = "<group>"; };
 		16BB059B23B6B9D500E51A00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		16CF35E623E01E3900833859 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 			children = (
 				16BB059323B6B42300E51A00 /* PlaylistIcons.swift */,
 				160A625523C2C3BD00790655 /* HeaderDetail.swift */,
-				16B7A76923E2B7C90012BFAF /* PlaylistDetails.swift */,
+				16B7A76923E2B7C90012BFAF /* SongDetail.swift */,
 			);
 			path = customIcons;
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				160A625E23C5521100790655 /* Song.swift in Sources */,
-				16B7A76A23E2B7C90012BFAF /* PlaylistDetails.swift in Sources */,
+				16B7A76A23E2B7C90012BFAF /* SongDetail.swift in Sources */,
 				16BB059423B6B42300E51A00 /* PlaylistIcons.swift in Sources */,
 				160A625623C2C3BD00790655 /* HeaderDetail.swift in Sources */,
 				160A625C23C4437F00790655 /* PlaylistRow.swift in Sources */,
