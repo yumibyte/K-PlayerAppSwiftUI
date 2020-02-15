@@ -11,6 +11,7 @@ struct SongDetail: View {
     var song: Song
     
     var body: some View {
+        
         Text(song.title)
     }
 }

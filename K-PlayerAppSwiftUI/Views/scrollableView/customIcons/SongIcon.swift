@@ -13,15 +13,21 @@ import SwiftUI
 struct SongIcon: View {
     
     let song: Song
-    let title: String
+    
+    
+    let cover = UIImage(named: coverName)
+    let imageView = UIImageView(image: cover!)
     
     var body: some View {
-        Text(song.title)
+        Rectangle()
+            .frame(width: 200, height: 200)
+        
+        
     }
 }
 
 struct SongIcon_Previews: PreviewProvider {
     static var previews: some View {
-        SongIcon(song: songData[0], title: "Hips Don't Lie")
+        SongIcon(song: songData[0])
     }
 }

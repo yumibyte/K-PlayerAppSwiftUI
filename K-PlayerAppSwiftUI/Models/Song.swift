@@ -12,13 +12,15 @@ struct Song: Hashable, Codable, Identifiable {
     var id: Int
     var artist: String
     var title: String
-    var cover: String
+    var coverName: String
     var level: Int
     var category: Category
+    
 //    var video:
     
     enum Category: String, Codable, CaseIterable, Hashable {
         case inglesVideos = "Ingles Videos"
         case spanishVideos = "Spanish Videos"
     }
+    
 }
