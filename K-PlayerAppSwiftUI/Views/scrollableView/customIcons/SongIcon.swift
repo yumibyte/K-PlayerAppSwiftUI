@@ -13,15 +13,11 @@ import SwiftUI
 struct SongIcon: View {
     
     let song: Song
-    
-    
-    let cover = UIImage(named: coverName)
-    let imageView = UIImageView(image: cover!)
-    
+     
     var body: some View {
-        Rectangle()
+        Image(song.coverName)
             .frame(width: 200, height: 200)
-        
+//
         
     }
 }
