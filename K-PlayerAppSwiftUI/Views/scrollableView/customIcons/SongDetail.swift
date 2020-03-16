@@ -11,8 +11,17 @@ struct SongDetail: View {
     var song: Song
     
     var body: some View {
+        HStack() {
+            Text("Shakira -- Sale el sol")
+                .padding()
+            Text("Duration")
+            .padding()
+
+            Text("Level")
+            .padding()
+
+        }
         
-        Text(song.title)
     }
 }
 

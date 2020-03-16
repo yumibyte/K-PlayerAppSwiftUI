@@ -2,15 +2,15 @@
     {
         "id":1001,
         "artist": "Shakira",
-        "title": "Hips Don't Lie",
+        "title": "bar",
         "coverName": "ShakiraSpanish",
         "level": 1,
         "category": "Spanish Videos"
     },
     {
         "id":1002,
-        "artist": "ye",
-        "title": "dog",
+        "artist": "test",
+        "title": "foo",
         "coverName": "ShakiraIngles",
         "level": 1,
         "category": "Ingles Videos"

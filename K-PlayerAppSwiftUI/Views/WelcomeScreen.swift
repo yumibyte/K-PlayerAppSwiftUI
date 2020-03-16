@@ -20,7 +20,6 @@ struct WelcomeScreen: View {
     
     
     var body: some View {
-//        Text("Hi!")
         
         NavigationView {
 
