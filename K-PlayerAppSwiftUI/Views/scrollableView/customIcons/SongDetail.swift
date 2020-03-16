@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SongDetail: View {
-    var song: Song
+    let song: Song
     
     var body: some View {
         HStack() {
@@ -16,10 +16,10 @@ struct SongDetail: View {
                 .padding()
             Text("Duration")
             .padding()
-
-            Text("Level")
-            .padding()
-
+            
+            Image("Level_1")
+            
+//            Image(decorative: "level" + song.level as! CGImage, scale: CGFloat(10.0))
         }
         
     }
