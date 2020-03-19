@@ -4,7 +4,7 @@
         "artist": "Shakira",
         "title": "bar",
         "coverName": "ShakiraSpanish",
-        "level": "1",
+        "level": "Level_1",
         "category": "Spanish Videos"
     },
     {
@@ -12,7 +12,7 @@
         "artist": "test",
         "title": "foo",
         "coverName": "ShakiraIngles",
-        "level": "1",
+        "level": "Level_1",
         "category": "Ingles Videos"
     },
     {
@@ -20,7 +20,7 @@
         "artist": "ye",
         "title": "dog",
         "coverName": "ShakiraIngles",
-        "level": "1",
+        "level": "Level_1",
         "category": "Ingles Videos"
     }
 ]

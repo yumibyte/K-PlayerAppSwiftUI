@@ -23,6 +23,7 @@
 		16BB059423B6B42300E51A00 /* PlaylistIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB059323B6B42300E51A00 /* PlaylistIcons.swift */; };
 		16BB059C23B6B9D500E51A00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16BB059B23B6B9D500E51A00 /* GoogleService-Info.plist */; };
 		16CF35E723E01E3900833859 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF35E623E01E3900833859 /* Data.swift */; };
+		16F94FC524234ED4009811A0 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F94FC424234ED4009811A0 /* LoginScreen.swift */; };
 		46BD9A7BBD248D6A9F868F6D /* Pods_K_PlayerAppSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AFAC94ACB0D912D41523A0 /* Pods_K_PlayerAppSwiftUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		16BB059323B6B42300E51A00 /* PlaylistIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistIcons.swift; sourceTree = "<group>"; };
 		16BB059B23B6B9D500E51A00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		16CF35E623E01E3900833859 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		16F94FC424234ED4009811A0 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		61E2B0F6A2331C6DB8AE339F /* Pods-K-PlayerAppSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K-PlayerAppSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-K-PlayerAppSwiftUI/Pods-K-PlayerAppSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		89AFAC94ACB0D912D41523A0 /* Pods_K_PlayerAppSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_K_PlayerAppSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE3E0CB2D5A4655B66F3AAE /* Pods-K-PlayerAppSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K-PlayerAppSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-K-PlayerAppSwiftUI/Pods-K-PlayerAppSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			children = (
 				1652AB1C238DD979001C21E2 /* LaunchScreen.storyboard */,
 				1652AB15238DD978001C21E2 /* WelcomeScreen.swift */,
+				16F94FC424234ED4009811A0 /* LoginScreen.swift */,
 				1627AEA123C704DE0087E862 /* scrollableView */,
 			);
 			path = Views;
@@ -316,6 +319,7 @@
 				1652AB14238DD978001C21E2 /* SceneDelegate.swift in Sources */,
 				1652AB16238DD978001C21E2 /* WelcomeScreen.swift in Sources */,
 				168568CE23F51E0200F7EDB5 /* SongIcon.swift in Sources */,
+				16F94FC524234ED4009811A0 /* LoginScreen.swift in Sources */,
 				16CF35E723E01E3900833859 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
