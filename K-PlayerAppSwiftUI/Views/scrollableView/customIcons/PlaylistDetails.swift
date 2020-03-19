@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SongDetail: View {
+struct PlaylistDetails: View {
     let song: Song
     
     var body: some View {
@@ -25,10 +25,10 @@ struct SongDetail: View {
     }
 }
 
-struct SongDetail_Previews: PreviewProvider {
+struct PlaylistDetaiils_Previews: PreviewProvider {
     static var previews: some View {
         
-        SongDetail(song: songData[0])
+        PlaylistDetails(song: songData[0])
         
     }
 }

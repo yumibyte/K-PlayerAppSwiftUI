@@ -23,7 +23,7 @@ struct PlaylistRow: View {
                 HStack() {
                     ForEach (self.songs, id: \.title) { song in
 
-                        NavigationLink(destination: SongDetail(song: song)) {
+                        NavigationLink(destination: PlaylistDetails(song: song)) {
                             PlaylistIcons(song: self.songs.first!)
                                 
                                         .frame(width: 300)
