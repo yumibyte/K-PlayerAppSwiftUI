@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import GoogleSignIn
 
 import SwiftUI
 
@@ -17,7 +16,13 @@ struct LoginScreen: View {
     @State private var password:String = ""
     
     var body: some View {
+<<<<<<< HEAD
             
+=======
+    
+    //MARK: - Header
+        
+>>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
     //MARK: - UITextFields
         VStack() {
             
@@ -60,6 +65,7 @@ struct LoginScreen: View {
     .offset(x: 0, y: -80)
     }
 }
+<<<<<<< HEAD
     
     //MARK: - Sign in with social option
 //struct SocialLogin: UIViewRepresentable {
@@ -78,6 +84,8 @@ struct LoginScreen: View {
 //    }
 //
 //}
+=======
+>>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
 
 struct LoginScreen_Previews: PreviewProvider {
     static var previews: some View {
