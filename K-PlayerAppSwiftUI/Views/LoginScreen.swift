@@ -10,17 +10,11 @@ import SwiftUI
 <<<<<<< HEAD
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> develop
 import SwiftUI
 =======
 >>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
 
-<<<<<<< HEAD
->>>>>>> develop
-=======
 >>>>>>> develop
 struct LoginScreen: View {
     
@@ -28,24 +22,12 @@ struct LoginScreen: View {
     @State private var password:String = ""
     
     var body: some View {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            
-=======
->>>>>>> develop
     
     //MARK: - Header
         
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
->>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
-=======
->>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
->>>>>>> develop
-=======
 >>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
 =======
 >>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
@@ -93,11 +75,8 @@ struct LoginScreen: View {
     }
 }
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
-=======
->>>>>>> develop
 <<<<<<< HEAD
     
     //MARK: - Sign in with social option
@@ -121,9 +100,6 @@ struct LoginScreen: View {
 >>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
 =======
 >>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
-<<<<<<< HEAD
->>>>>>> develop
-=======
 >>>>>>> develop
 
 struct LoginScreen_Previews: PreviewProvider {

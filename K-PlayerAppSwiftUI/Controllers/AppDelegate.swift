@@ -10,21 +10,13 @@ import UIKit
 import GoogleSignIn
 
 @UIApplicationMain
-<<<<<<< HEAD
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
-=======
-class AppDelegate: UIResponder, UIApplicationDelegate {
->>>>>>> develop
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
-<<<<<<< HEAD
     
-=======
-/*
->>>>>>> develop
     //MARK: - Google Sign in Functionality
     
     // Configure shared instance and set sign-in delegate
@@ -59,23 +51,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       }
         
         
-<<<<<<< HEAD
       // Perform any operations on signed in user here.
 <<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-       Perform any operations on signed in user here.
-=======
-      // Perform any operations on signed in user here.
->>>>>>> develop
 <<<<<<< HEAD
 >>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
 =======
 >>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
-<<<<<<< HEAD
->>>>>>> develop
-=======
 >>>>>>> develop
       let userId = user.userID                  // For client-side use only!
       let idToken = user.authentication.idToken // Safe to send to the server
@@ -92,10 +74,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       // Perform any operations when the user disconnects from app here.
       // ...
     }
-<<<<<<< HEAD
-=======
- */
->>>>>>> develop
 
 
 
