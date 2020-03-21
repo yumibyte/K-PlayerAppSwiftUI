@@ -15,15 +15,7 @@
   <key>CFBundlePackageType</key>
   <string>FMWK</string>
   <key>CFBundleShortVersionString</key>
-<<<<<<< HEAD
-  <string>1.3.0</string>
-=======
-<<<<<<< HEAD:Pods/Target Support Files/GTMAppAuth/GTMAppAuth-Info.plist
   <string>1.0.0</string>
-=======
-  <string>1.3.0</string>
->>>>>>> develop:Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher-Info 4.plist
->>>>>>> develop
   <key>CFBundleSignature</key>
   <string>????</string>
   <key>CFBundleVersion</key>
