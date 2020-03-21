@@ -7,8 +7,11 @@
 //
 
 import SwiftUI
+<<<<<<< HEAD
 
 import SwiftUI
+=======
+>>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
 
 struct LoginScreen: View {
     
@@ -22,6 +25,9 @@ struct LoginScreen: View {
     
     //MARK: - Header
         
+<<<<<<< HEAD
+>>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
+=======
 >>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
     //MARK: - UITextFields
         VStack() {
@@ -66,6 +72,7 @@ struct LoginScreen: View {
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     //MARK: - Sign in with social option
 //struct SocialLogin: UIViewRepresentable {
@@ -84,6 +91,8 @@ struct LoginScreen: View {
 //    }
 //
 //}
+=======
+>>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
 =======
 >>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
 
