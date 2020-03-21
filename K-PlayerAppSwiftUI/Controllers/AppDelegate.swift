@@ -51,7 +51,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       }
         
         
+<<<<<<< HEAD
        Perform any operations on signed in user here.
+=======
+      // Perform any operations on signed in user here.
+>>>>>>> parent of 133dfe5... added reusable UIViewController for GoogleSignIn and modified all Doubles/Floats with CGFloat()
       let userId = user.userID                  // For client-side use only!
       let idToken = user.authentication.idToken // Safe to send to the server
       let fullName = user.profile.name
