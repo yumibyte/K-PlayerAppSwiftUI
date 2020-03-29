@@ -21,7 +21,6 @@
 		168568CE23F51E0200F7EDB5 /* SongIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168568CD23F51E0200F7EDB5 /* SongIcon.swift */; };
 		16B7A76A23E2B7C90012BFAF /* PlaylistDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B7A76923E2B7C90012BFAF /* PlaylistDetails.swift */; };
 		16BB059423B6B42300E51A00 /* PlaylistIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB059323B6B42300E51A00 /* PlaylistIcons.swift */; };
-		16BB059C23B6B9D500E51A00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16BB059B23B6B9D500E51A00 /* GoogleService-Info.plist */; };
 		16CF35E723E01E3900833859 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CF35E623E01E3900833859 /* Data.swift */; };
 		16F94FC524234ED4009811A0 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F94FC424234ED4009811A0 /* LoginScreen.swift */; };
 		46BD9A7BBD248D6A9F868F6D /* Pods_K_PlayerAppSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AFAC94ACB0D912D41523A0 /* Pods_K_PlayerAppSwiftUI.framework */; };
@@ -46,7 +45,6 @@
 		168568CD23F51E0200F7EDB5 /* SongIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongIcon.swift; sourceTree = "<group>"; };
 		16B7A76923E2B7C90012BFAF /* PlaylistDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaylistDetails.swift; path = "/Users/ashleyraigosa/Desktop/Programming/Xcode - swift/K-PlayerAppSwiftUI/K-PlayerAppSwiftUI/Views/scrollableView/customIcons/PlaylistDetails.swift"; sourceTree = "<absolute>"; };
 		16BB059323B6B42300E51A00 /* PlaylistIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistIcons.swift; sourceTree = "<group>"; };
-		16BB059B23B6B9D500E51A00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		16CF35E623E01E3900833859 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		16F94FC424234ED4009811A0 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		61E2B0F6A2331C6DB8AE339F /* Pods-K-PlayerAppSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-K-PlayerAppSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-K-PlayerAppSwiftUI/Pods-K-PlayerAppSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 		1627AEA223C705250087E862 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				16BB059B23B6B9D500E51A00 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -204,7 +201,6 @@
 				1652AB0B238DD978001C21E2 /* Frameworks */,
 				1652AB0C238DD978001C21E2 /* Resources */,
 				043CB66D4070F494FC1FB070 /* [CP] Embed Pods Frameworks */,
-				F7118BB0BADE71A7E222393D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,7 +251,6 @@
 			files = (
 				1652AB1E238DD979001C21E2 /* LaunchScreen.storyboard in Resources */,
 				1627AE9D23C702100087E862 /* songs.json in Resources */,
-				16BB059C23B6B9D500E51A00 /* GoogleService-Info.plist in Resources */,
 				1652AB1B238DD979001C21E2 /* Preview Assets.xcassets in Resources */,
 				1652AB18238DD979001C21E2 /* Assets.xcassets in Resources */,
 				1610B68A23E177EB00940C01 /* Default-568h@2x.png in Resources */,
@@ -302,23 +297,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F7118BB0BADE71A7E222393D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-K-PlayerAppSwiftUI/Pods-K-PlayerAppSwiftUI-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-K-PlayerAppSwiftUI/Pods-K-PlayerAppSwiftUI-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-K-PlayerAppSwiftUI/Pods-K-PlayerAppSwiftUI-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

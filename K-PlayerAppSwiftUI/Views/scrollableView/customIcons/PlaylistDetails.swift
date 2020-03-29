@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct PlaylistDetails: View {
     let song: Song
     
@@ -15,6 +16,8 @@ struct PlaylistDetails: View {
 //        List() { song in
 //            Image(song.level)
 //            Text(song.title)
+        
+        
         HStack() {
             Text("Shakira -- Sale el sol")
                 .padding()
