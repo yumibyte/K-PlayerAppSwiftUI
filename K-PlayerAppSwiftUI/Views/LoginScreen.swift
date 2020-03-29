@@ -23,13 +23,6 @@ struct LoginScreen: View {
                 Text("Sign in to K-Player")
                     .font(.largeTitle)
                     .foregroundColor(.primary)
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    .padding(40)
-=======
->>>>>>> FirebaseInitialization
-=======
->>>>>>> FirebaseInitialization
             
                     .padding()
             VStack(spacing:10) {
