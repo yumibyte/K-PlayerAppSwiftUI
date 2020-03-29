@@ -109,14 +109,8 @@
 		1627AEA223C705250087E862 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 				16FD22A8243049EA00A072FB /* GoogleService-Info.plist */,
->>>>>>> FirebaseInitialization
-=======
 				16FD22A8243049EA00A072FB /* GoogleService-Info.plist */,
->>>>>>> FirebaseInitialization
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
