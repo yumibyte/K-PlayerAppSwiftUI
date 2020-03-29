@@ -1,3 +1,8 @@
 .DS_Store
 test.plist
+<<<<<<< HEAD
 GoogleService-Info.plist
+=======
+GoogleService-Info.plist
+UserInterfaceState.xcuserstate
+>>>>>>> FirebaseInitialization

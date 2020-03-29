@@ -24,7 +24,10 @@ struct LoginScreen: View {
                     .font(.largeTitle)
                     .foregroundColor(.primary)
 <<<<<<< HEAD
+<<<<<<< HEAD
                     .padding(40)
+=======
+>>>>>>> FirebaseInitialization
 =======
 >>>>>>> FirebaseInitialization
             

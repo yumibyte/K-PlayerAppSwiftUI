@@ -110,6 +110,10 @@
 			isa = PBXGroup;
 			children = (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+				16FD22A8243049EA00A072FB /* GoogleService-Info.plist */,
+>>>>>>> FirebaseInitialization
 =======
 				16FD22A8243049EA00A072FB /* GoogleService-Info.plist */,
 >>>>>>> FirebaseInitialization
