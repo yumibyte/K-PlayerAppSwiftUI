@@ -56,13 +56,13 @@ struct LoginScreen: View {
                     print("Sign up!")
                 
                 }) {
-                    
                     Text("Sign up")
-                    .frame(width: 90)
+
                         .foregroundColor(.gray)
-                    .padding(10)
-                        .overlay(RoundedRectangle(cornerRadius: 15.0).stroke(Color.gray, lineWidth: 1))
-                    .padding(30)
+                    
+                        .underline()
+                    .padding(20)
+
                 }
             }
 
