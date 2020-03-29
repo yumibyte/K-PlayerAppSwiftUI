@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LoginScreen: View {
     
@@ -17,15 +18,18 @@ struct LoginScreen: View {
     
     
     //MARK: - UITextFields
-        VStack() {
+        VStack(spacing: 110) {
             
                 Text("Sign in to K-Player")
                     .font(.largeTitle)
                     .foregroundColor(.primary)
+<<<<<<< HEAD
                     .padding(40)
+=======
+>>>>>>> FirebaseInitialization
             
-        
-            VStack() {
+                    .padding()
+            VStack(spacing:10) {
                 TextField("Username", text: $username) .padding()
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                     .scaleEffect(0.85)
@@ -45,17 +49,57 @@ struct LoginScreen: View {
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(15.0)
-                        .padding(30)
+                        .padding(10)
                 }
-            
-        
+                .padding(20)
+                LabelledDivider(label: "OR", horizontalPadding: 10, color: .gray)
                 
+                    
+                Button(action: {
+                    
+                    print("Sign up!")
                 
+                }) {
+                    Text("Sign up")
+
+                        .foregroundColor(.gray)
+                    
+                        .underline()
+                    .padding(20)
+
+                }
             }
 
         
         }
-    .offset(x: 0, y: -80)
+        
+    }
+}
+
+// Dividers w/ titles
+struct LabelledDivider: View {
+
+    let label: String
+    let horizontalPadding: CGFloat
+    let color: Color
+
+    init(label: String, horizontalPadding: CGFloat = 20, color: Color = .gray) {
+        self.label = label
+        self.horizontalPadding = horizontalPadding
+        self.color = color
+    }
+
+    var body: some View {
+        HStack {
+            line
+            Text(label).foregroundColor(color)
+            line
+        }
+    }
+
+    var line: some View {
+        VStack { Divider().background(color) }.padding(horizontalPadding)
+            .frame(width: 155)
     }
 }
 
