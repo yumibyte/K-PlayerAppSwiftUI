@@ -22,7 +22,7 @@ struct LoginScreen: View {
                 Text("Sign in to K-Player")
                     .font(.largeTitle)
                     .foregroundColor(.primary)
-                    .padding(70)
+                    .padding(40)
             
         
             VStack() {
