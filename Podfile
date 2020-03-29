@@ -5,5 +5,7 @@ target 'K-PlayerAppSwiftUI' do
   use_frameworks!
 
   # Pods for K-PlayerAppSwiftUI
-
+pod 'Firebase'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
 end

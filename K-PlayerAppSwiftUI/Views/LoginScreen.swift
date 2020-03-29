@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-
+import Firebase
 
 struct LoginScreen: View {
     
@@ -48,6 +48,22 @@ struct LoginScreen: View {
                         .cornerRadius(15.0)
                         .padding(30)
                 }
+                
+                LabelledDivider(label: "OR", horizontalPadding: 10, color: .gray)
+//                VStack {
+//                    Divider().background(Color.gray)
+//                        .frame(width: 140)
+//                        .offset(x: -95)
+//                    Text("OR")
+//                    Divider().background(Color.gray)
+//                        .frame(width: 140)
+//                        .offset(x: 95)
+//                }
+//
+                
+                
+//                Button("")
+                
             
         
                 
@@ -57,6 +73,34 @@ struct LoginScreen: View {
         
         }
     .offset(x: 0, y: -80)
+        
+    }
+}
+
+// Dividers w/ titles
+struct LabelledDivider: View {
+
+    let label: String
+    let horizontalPadding: CGFloat
+    let color: Color
+
+    init(label: String, horizontalPadding: CGFloat = 20, color: Color = .gray) {
+        self.label = label
+        self.horizontalPadding = horizontalPadding
+        self.color = color
+    }
+
+    var body: some View {
+        HStack {
+            line
+            Text(label).foregroundColor(color)
+            line
+        }
+    }
+
+    var line: some View {
+        VStack { Divider().background(color) }.padding(horizontalPadding)
+            .frame(width: 155)
     }
 }
 
