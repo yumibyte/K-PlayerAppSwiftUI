@@ -18,15 +18,14 @@ struct LoginScreen: View {
     
     
     //MARK: - UITextFields
-        VStack() {
+        VStack(spacing: 110) {
             
                 Text("Sign in to K-Player")
                     .font(.largeTitle)
                     .foregroundColor(.primary)
-                    .padding(70)
             
-        
-            VStack() {
+                    .padding()
+            VStack(spacing:10) {
                 TextField("Username", text: $username) .padding()
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                     .scaleEffect(0.85)
@@ -46,33 +45,29 @@ struct LoginScreen: View {
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(15.0)
-                        .padding(30)
+                        .padding(10)
                 }
-                
+                .padding(20)
                 LabelledDivider(label: "OR", horizontalPadding: 10, color: .gray)
-//                VStack {
-//                    Divider().background(Color.gray)
-//                        .frame(width: 140)
-//                        .offset(x: -95)
-//                    Text("OR")
-//                    Divider().background(Color.gray)
-//                        .frame(width: 140)
-//                        .offset(x: 95)
-//                }
-//
                 
+                    
+                Button(action: {
+                    
+                    print("Sign up!")
                 
-//                Button("")
-                
-            
-        
-                
-                
+                }) {
+                    
+                    Text("Sign up")
+                    .frame(width: 90)
+                        .foregroundColor(.gray)
+                    .padding(10)
+                        .overlay(RoundedRectangle(cornerRadius: 15.0).stroke(Color.gray, lineWidth: 1))
+                    .padding(30)
+                }
             }
 
         
         }
-    .offset(x: 0, y: -80)
         
     }
 }
