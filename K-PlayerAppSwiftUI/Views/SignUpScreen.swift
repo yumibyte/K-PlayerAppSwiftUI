@@ -20,7 +20,7 @@ struct SignUpScreen: View {
     
     // Signup method
     
-    func signUp () {
+    func signUp() {
         loading = true
         error = false
         session.signUp(email: email, password: password) { (result, error) in

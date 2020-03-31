@@ -19,7 +19,7 @@ struct LoginScreen: View {
     @EnvironmentObject var session: SessionStore
     
     //MARK: - Sign in Method
-    func signIn () {
+    func signIn() {
         loading = true
         error = false
         session.signIn(email: email, password: password) { (result, error) in
@@ -33,7 +33,7 @@ struct LoginScreen: View {
         }
     }
     
-    func signUp () {
+    func signUp() {
         loading = true
         error = false
         session.signUp(email: email, password: password) { (result, error) in

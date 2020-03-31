@@ -77,7 +77,6 @@
 			children = (
 				160A625D23C5521100790655 /* Song.swift */,
 				16CF35E623E01E3900833859 /* Data.swift */,
-				166456442432FBE700B078F8 /* SessionStore.swift */,
 				166456482432FE5D00B078F8 /* LoadLogin.swift */,
 			);
 			path = Models;
@@ -86,6 +85,7 @@
 		1627AE9F23C704940087E862 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				166456442432FBE700B078F8 /* SessionStore.swift */,
 				1652AB1C238DD979001C21E2 /* LaunchScreen.storyboard */,
 				1652AB15238DD978001C21E2 /* WelcomeScreen.swift */,
 				16F94FC424234ED4009811A0 /* LoginScreen.swift */,
