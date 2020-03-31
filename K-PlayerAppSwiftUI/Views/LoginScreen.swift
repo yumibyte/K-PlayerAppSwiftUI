@@ -17,11 +17,26 @@ struct LoginScreen: View {
     @State var error = false
     
     @EnvironmentObject var session: SessionStore
+    
     //MARK: - Sign in Method
     func signIn () {
         loading = true
         error = false
         session.signIn(email: email, password: password) { (result, error) in
+            self.loading = false
+            if error != nil {
+                self.error = true
+            } else {
+                self.email = ""
+                self.password = ""
+            }
+        }
+    }
+    
+    func signUp () {
+        loading = true
+        error = false
+        session.signUp(email: email, password: password) { (result, error) in
             self.loading = false
             if error != nil {
                 self.error = true
@@ -52,10 +67,12 @@ struct LoginScreen: View {
                 SecureField("Password", text: $password)
                     .padding() .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                     .scaleEffect(0.85)
+                
                 //MARK: - Login Handling
                 if (error) {
                     Text("unable to sign in")
                 }
+                
                 //MARK: - Login Options
                 Button(action: signIn) {
                     
@@ -71,11 +88,7 @@ struct LoginScreen: View {
                 LabelledDivider(label: "OR", horizontalPadding: 10, color: .gray)
                 
                     
-                Button(action: {
-    
-                    Text("hi")
-                
-                }) {
+                Button(action: signUp) {
                     Text("Sign up")
 
                         .foregroundColor(.gray)

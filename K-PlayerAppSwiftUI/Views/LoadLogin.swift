@@ -21,6 +21,8 @@ struct LoadLogin: View {
                 Text("Hello User!")
             } else {
                 Text("Our authentication screen goes here...")
+                
+                //TODO: Add sign up screen
             }
         }.onAppear(perform: getUser)
     }
