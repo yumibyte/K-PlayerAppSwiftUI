@@ -20,9 +20,8 @@ struct LoadLogin: View {
             if (session.session != nil) {
                 Text("Hello User!")
             } else {
-                Text("Our authentication screen goes here...")
-                
-                //TODO: Add sign up screen
+                //authentication screen
+                SignUpScreen()
             }
         }.onAppear(perform: getUser)
     }

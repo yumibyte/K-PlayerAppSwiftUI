@@ -20,6 +20,7 @@
 		1652AB1E238DD979001C21E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1652AB1C238DD979001C21E2 /* LaunchScreen.storyboard */; };
 		166456452432FBE700B078F8 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166456442432FBE700B078F8 /* SessionStore.swift */; };
 		166456492432FE5D00B078F8 /* LoadLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166456482432FE5D00B078F8 /* LoadLogin.swift */; };
+		1664564B2433038C00B078F8 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664564A2433038C00B078F8 /* SignUpScreen.swift */; };
 		168568CE23F51E0200F7EDB5 /* SongIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168568CD23F51E0200F7EDB5 /* SongIcon.swift */; };
 		16B7A76A23E2B7C90012BFAF /* PlaylistDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B7A76923E2B7C90012BFAF /* PlaylistDetails.swift */; };
 		16BB059423B6B42300E51A00 /* PlaylistIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB059323B6B42300E51A00 /* PlaylistIcons.swift */; };
@@ -47,6 +48,7 @@
 		1652AB1F238DD979001C21E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "../Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		166456442432FBE700B078F8 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		166456482432FE5D00B078F8 /* LoadLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadLogin.swift; sourceTree = "<group>"; };
+		1664564A2433038C00B078F8 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		168568CD23F51E0200F7EDB5 /* SongIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongIcon.swift; sourceTree = "<group>"; };
 		16B7A76923E2B7C90012BFAF /* PlaylistDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaylistDetails.swift; path = "/Users/ashleyraigosa/Desktop/Programming/Xcode - swift/K-PlayerAppSwiftUI/K-PlayerAppSwiftUI/Views/scrollableView/customIcons/PlaylistDetails.swift"; sourceTree = "<absolute>"; };
 		16BB059323B6B42300E51A00 /* PlaylistIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistIcons.swift; sourceTree = "<group>"; };
@@ -75,6 +77,8 @@
 			children = (
 				160A625D23C5521100790655 /* Song.swift */,
 				16CF35E623E01E3900833859 /* Data.swift */,
+				166456442432FBE700B078F8 /* SessionStore.swift */,
+				166456482432FE5D00B078F8 /* LoadLogin.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -85,8 +89,7 @@
 				1652AB1C238DD979001C21E2 /* LaunchScreen.storyboard */,
 				1652AB15238DD978001C21E2 /* WelcomeScreen.swift */,
 				16F94FC424234ED4009811A0 /* LoginScreen.swift */,
-				166456442432FBE700B078F8 /* SessionStore.swift */,
-				166456482432FE5D00B078F8 /* LoadLogin.swift */,
+				1664564A2433038C00B078F8 /* SignUpScreen.swift */,
 				1627AEA123C704DE0087E862 /* scrollableView */,
 			);
 			path = Views;
@@ -323,6 +326,7 @@
 				160A625623C2C3BD00790655 /* HeaderDetail.swift in Sources */,
 				160A625C23C4437F00790655 /* PlaylistRow.swift in Sources */,
 				1652AB12238DD978001C21E2 /* AppDelegate.swift in Sources */,
+				1664564B2433038C00B078F8 /* SignUpScreen.swift in Sources */,
 				1652AB14238DD978001C21E2 /* SceneDelegate.swift in Sources */,
 				1652AB16238DD978001C21E2 /* WelcomeScreen.swift in Sources */,
 				168568CE23F51E0200F7EDB5 /* SongIcon.swift in Sources */,
