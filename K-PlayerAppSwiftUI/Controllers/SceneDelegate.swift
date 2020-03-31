@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        let contentView = WelcomeScreen()
+        let contentView = LoginScreen()
         
         // conditionally render authentication message if user isn't logged in
         window?.rootViewController = UIHostingController(
