@@ -53,7 +53,20 @@ struct LoginScreen: View {
                     
                 Button(action: {
                     
-                    print("Sign up!")
+                    Auth.auth().signIn(withEmail: self.username, password: self.password) { (user, error) in
+                        
+                        if error != nil {
+                            
+                            print(error!)
+                            
+                        } else {
+                            
+                            print("login was successful!")
+                            NavigationLink("WelcomeScreen", destination: WelcomeScreen())
+                            
+                        }
+                        
+                    }
                 
                 }) {
                     Text("Sign up")
