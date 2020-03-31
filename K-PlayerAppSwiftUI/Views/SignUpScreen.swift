@@ -39,13 +39,12 @@ struct SignUpScreen: View {
     
     
     //MARK: - UITextFields
-        VStack(spacing: 80) {
+        VStack(spacing: 100) {
             
                 Text("Register for K-Player")
                     .font(.largeTitle)
                     .foregroundColor(.primary)
             
-//                    .padding()
             VStack(spacing:10) {
                 TextField("Email", text: $email) .padding()
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
@@ -54,22 +53,26 @@ struct SignUpScreen: View {
                 SecureField("Password", text: $password)
                     .padding() .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                     .scaleEffect(0.85)
+                    
                 
-                //MARK: - Sign up Handling
+                
+    //MARK: - Sign up Handling
                 if (error) {
                     Text("unable to sign in")
                 }
                 
-                //MARK: - Sign up Options
+                
+    //MARK: - Sign up Options
                 Button(action: signUp) {
                     
                     Text("Sign up")
                         .frame(width: 335, height: 50)
-                        
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(15.0)
-                        .padding(10)
+                        .padding()
+                    
+                    
                 }
 
                 
