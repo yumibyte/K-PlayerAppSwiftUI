@@ -11,8 +11,28 @@ import Firebase
 
 struct LoginScreen: View {
     
-    @State private var username:String = ""
-    @State private var password:String = ""
+    @State var email: String = ""
+    @State var password: String = ""
+    @State var loading = false
+    @State var error = false
+    
+    @EnvironmentObject var session: SessionStore
+    
+    //MARK: - Sign in Method
+    func signIn() {
+        loading = true
+        error = false
+        session.signIn(email: email, password: password) { (result, error) in
+            self.loading = false
+            if error != nil {
+                self.error = true
+            } else {
+                self.email = ""
+                self.password = ""
+            }
+        }
+    }
+    
     
     var body: some View {
     
@@ -25,50 +45,50 @@ struct LoginScreen: View {
                     .foregroundColor(.primary)
             
                     .padding()
-            VStack(spacing:10) {
-                TextField("Username", text: $username) .padding()
+                    .offset(y: 20)
+            VStack(spacing: 10) {
+                TextField("Email", text: $email) .padding()
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                     .scaleEffect(0.85)
-                
+
                 SecureField("Password", text: $password)
                     .padding() .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                     .scaleEffect(0.85)
+
+                
+                //MARK: - Login Handling
+                if (error) {
+                    Text("unable to sign in")
+                }
                 
                 //MARK: - Login Options
-                Button(action: {
-                    print("hi!")
-                }) {
+                Button(action: signIn) {
                     
-                    Text("Log in ")
+                    Text("Log in")
+                        
                         .frame(width: 335, height: 50)
                         
                         .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(15.0)
-                        .padding(10)
+                        
+                        .padding()
+
                 }
-                .padding(20)
+                .padding()
                 LabelledDivider(label: "OR", horizontalPadding: 10, color: .gray)
                 
+                NavigationView {
+                    NavigationLink(destination: SignUpScreen()) {
+                        Text("Register")
+                            .foregroundColor(.gray)
+                            .underline()
+                            .offset(y: -145)
+                        }
                     
-                Button(action: {
-                    
-                    print("Sign up!")
-                
-                }) {
-                    Text("Sign up")
-
-                        .foregroundColor(.gray)
-                    
-                        .underline()
-                    .padding(20)
-
                 }
             }
-
-        
-        }
-        
+        }.offset(y: 70)
     }
 }
 
