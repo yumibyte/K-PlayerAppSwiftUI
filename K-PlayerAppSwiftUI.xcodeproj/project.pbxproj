@@ -19,6 +19,7 @@
 		1652AB1B238DD979001C21E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1652AB1A238DD979001C21E2 /* Preview Assets.xcassets */; };
 		1652AB1E238DD979001C21E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1652AB1C238DD979001C21E2 /* LaunchScreen.storyboard */; };
 		166456452432FBE700B078F8 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166456442432FBE700B078F8 /* SessionStore.swift */; };
+		166456492432FE5D00B078F8 /* LoadLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166456482432FE5D00B078F8 /* LoadLogin.swift */; };
 		168568CE23F51E0200F7EDB5 /* SongIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168568CD23F51E0200F7EDB5 /* SongIcon.swift */; };
 		16B7A76A23E2B7C90012BFAF /* PlaylistDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B7A76923E2B7C90012BFAF /* PlaylistDetails.swift */; };
 		16BB059423B6B42300E51A00 /* PlaylistIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB059323B6B42300E51A00 /* PlaylistIcons.swift */; };
@@ -45,6 +46,7 @@
 		1652AB1D238DD979001C21E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1652AB1F238DD979001C21E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "../Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		166456442432FBE700B078F8 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		166456482432FE5D00B078F8 /* LoadLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadLogin.swift; sourceTree = "<group>"; };
 		168568CD23F51E0200F7EDB5 /* SongIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongIcon.swift; sourceTree = "<group>"; };
 		16B7A76923E2B7C90012BFAF /* PlaylistDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaylistDetails.swift; path = "/Users/ashleyraigosa/Desktop/Programming/Xcode - swift/K-PlayerAppSwiftUI/K-PlayerAppSwiftUI/Views/scrollableView/customIcons/PlaylistDetails.swift"; sourceTree = "<absolute>"; };
 		16BB059323B6B42300E51A00 /* PlaylistIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistIcons.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				1652AB15238DD978001C21E2 /* WelcomeScreen.swift */,
 				16F94FC424234ED4009811A0 /* LoginScreen.swift */,
 				166456442432FBE700B078F8 /* SessionStore.swift */,
+				166456482432FE5D00B078F8 /* LoadLogin.swift */,
 				1627AEA123C704DE0087E862 /* scrollableView */,
 			);
 			path = Views;
@@ -325,6 +328,7 @@
 				168568CE23F51E0200F7EDB5 /* SongIcon.swift in Sources */,
 				16F94FC524234ED4009811A0 /* LoginScreen.swift in Sources */,
 				16CF35E723E01E3900833859 /* Data.swift in Sources */,
+				166456492432FE5D00B078F8 /* LoadLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
