@@ -11,8 +11,27 @@ import Firebase
 
 struct LoginScreen: View {
     
-    @State private var username:String = ""
-    @State private var password:String = ""
+    @State var email: String = ""
+    @State var password: String = ""
+    @State var loading = false
+    @State var error = false
+    
+    @EnvironmentObject var session: SessionStore
+    //MARK: - Sign in Method
+    func signIn () {
+        loading = true
+        error = false
+        session.signIn(email: email, password: password) { (result, error) in
+            self.loading = false
+            if error != nil {
+                self.error = true
+            } else {
+                self.email = ""
+                self.password = ""
+            }
+        }
+    }
+    
     
     var body: some View {
     
@@ -26,20 +45,21 @@ struct LoginScreen: View {
             
                     .padding()
             VStack(spacing:10) {
-                TextField("Username", text: $username) .padding()
+                TextField("Email", text: $email) .padding()
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                     .scaleEffect(0.85)
                 
                 SecureField("Password", text: $password)
                     .padding() .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                     .scaleEffect(0.85)
-                
+                //MARK: - Login Handling
+                if (error) {
+                    Text("unable to sign in")
+                }
                 //MARK: - Login Options
-                Button(action: {
-                    print("hi!")
-                }) {
+                Button(action: signIn) {
                     
-                    Text("Log in ")
+                    Text("Log in")
                         .frame(width: 335, height: 50)
                         
                         .background(Color.blue)
@@ -52,21 +72,8 @@ struct LoginScreen: View {
                 
                     
                 Button(action: {
-                    
-                    Auth.auth().signIn(withEmail: self.username, password: self.password) { (user, error) in
-                        
-                        if error != nil {
-                            
-                            print(error!)
-                            
-                        } else {
-                            
-                            print("login was successful!")
-                            NavigationLink("WelcomeScreen", destination: WelcomeScreen())
-                            
-                        }
-                        
-                    }
+    
+                    Text("hi")
                 
                 }) {
                     Text("Sign up")
@@ -77,6 +84,7 @@ struct LoginScreen: View {
                     .padding(20)
 
                 }
+                
             }
 
         
