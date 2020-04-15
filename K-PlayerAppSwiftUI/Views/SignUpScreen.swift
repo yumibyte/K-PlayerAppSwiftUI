@@ -30,6 +30,7 @@ struct SignUpScreen: View {
             } else {
                 self.email = ""
                 self.password = ""
+                
             }
         }
     }
@@ -64,6 +65,7 @@ struct SignUpScreen: View {
                 
     //MARK: - Sign up Options
                 Button(action: signUp) {
+                    
                     
                     Text("Sign up")
                         .frame(width: 335, height: 50)
