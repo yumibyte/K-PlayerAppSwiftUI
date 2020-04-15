@@ -11,6 +11,7 @@ import Firebase
 
 struct LoginScreen: View {
     
+    @State private var isActive: Bool = false
     @State var email: String = ""
     @State var password: String = ""
     @State var loading = false
@@ -79,16 +80,21 @@ struct LoginScreen: View {
                 LabelledDivider(label: "OR", horizontalPadding: 10, color: .gray)
                 
                 NavigationView {
-                    NavigationLink(destination: SignUpScreen()) {
-                        Text("Register")
-                            .foregroundColor(.gray)
-                            .underline()
-                            .offset(y: -145)
-                        }
                     
+                    NavigationLink(destination: SignUpScreen(), isActive: self.$isActive) {
+                        Text("Register")
+                    }
+                    Button("") {
+                        self.isActive = true
+                    }
                 }
-            }
-        }.offset(y: 70)
+                
+                    
+                
+                
+
+            }.offset(y: 70)
+        }
     }
 }
 

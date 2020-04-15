@@ -1,0 +1,4 @@
+Text("Register")
+                            .foregroundColor(.gray)
+                            .underline()
+                            .offset(y: -145)
