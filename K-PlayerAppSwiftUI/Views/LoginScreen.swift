@@ -37,64 +37,61 @@ struct LoginScreen: View {
     
     var body: some View {
     
-    
-    //MARK: - UITextFields
-        VStack(spacing: 110) {
-            
-                Text("Sign in to K-Player")
-                    .font(.largeTitle)
-                    .foregroundColor(.primary)
-            
-                    .padding()
-                    .offset(y: 20)
-            VStack(spacing: 10) {
-                TextField("Email", text: $email) .padding()
-                    .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
-                    .scaleEffect(0.85)
-
-                SecureField("Password", text: $password)
-                    .padding() .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
-                    .scaleEffect(0.85)
-
+        NavigationView {
+            //MARK: - UITextFields
+            VStack(spacing: 110) {
                 
-                //MARK: - Login Handling
-                if (error) {
-                    Text("unable to sign in")
-                }
+                    Text("Sign in to K-Player")
+                        .font(.largeTitle)
+                        .foregroundColor(.primary)
                 
-                //MARK: - Login Options
-                Button(action: signIn) {
-                    
-                    Text("Log in")
-                        
-                        .frame(width: 335, height: 50)
-                        
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(15.0)
-                        
                         .padding()
+                        .offset(y: -30)
+                VStack(spacing: 10) {
+                    TextField("Email", text: $email) .padding()
+                        .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
+                        .scaleEffect(0.85)
 
-                }
-                .padding()
-                LabelledDivider(label: "OR", horizontalPadding: 10, color: .gray)
-                
-                NavigationView {
+                    SecureField("Password", text: $password)
+                        .padding() .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
+                        .scaleEffect(0.85)
+
                     
+                    //MARK: - Login Handling
+                    if (error) {
+                        Text("unable to sign in")
+                    }
+                    
+                    //MARK: - Login Options
+                    Button(action: signIn) {
+                        
+                        Text("Log in")
+                            
+                            .frame(width: 335, height: 50)
+                            
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(15.0)
+                            
+                            .padding()
+
+                    }
+                    .padding()
+                    LabelledDivider(label: "OR", horizontalPadding: 10, color: .gray)
+                    
+                    
+                        
                     NavigationLink(destination: SignUpScreen(), isActive: self.$isActive) {
                         Text("Register")
                     }
                     Button("") {
                         self.isActive = true
                     }
-                }
-                
-                    
-                
-                
 
-            }.offset(y: 70)
+                }
+            }
         }
+
     }
 }
 

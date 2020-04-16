@@ -21,6 +21,7 @@ struct SignUpScreen: View {
     // Signup method
     
     func signUp() {
+
         loading = true
         error = false
         session.signUp(email: email, password: password) { (result, error) in
@@ -40,12 +41,12 @@ struct SignUpScreen: View {
     
     
     //MARK: - UITextFields
-        VStack(spacing: 100) {
+        VStack(spacing: 110) {
             
                 Text("Register for K-Player")
                     .font(.largeTitle)
                     .foregroundColor(.primary)
-            
+                    .offset(y: -30)
             VStack(spacing:10) {
                 TextField("Email", text: $email) .padding()
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
@@ -54,6 +55,7 @@ struct SignUpScreen: View {
                 SecureField("Password", text: $password)
                     .padding() .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                     .scaleEffect(0.85)
+                    
                     
                 
                 
