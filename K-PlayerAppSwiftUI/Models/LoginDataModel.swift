@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import Firebase
 
 struct Login: Identifiable {
     
-    let ref: DatabaseRefereence?
+    let ref: DatabaseReference?
     let key: String
     let login: String
     let isComplete: String
@@ -24,17 +25,24 @@ struct Login: Identifiable {
         self.id = key
     }
     init?(snapshot: DataSnapshot) {
-        guard {
-            let value = snapshot.value as? [String: AnyObject]
+        guard let value = snapshot.value as? [String: AnyObject],
             let login = value["todo"] as? String,
             let isComplete = value["isComplete"] as? String
-        } else {
-            return nil
-        }
+            else {
+                return nil
+            }
         self.ref = snapshot.ref
-        seelf.key = snapshot.key
-        self.login = login
-        self.isComplete = isCompletes
+        self.key = snapshot.key
+        self.login = login 
+        self.isComplete = isComplete
         self.id = snapshot.key
+    }
+    
+    func toAnyObject() -> Any {
+        return [
+            "login": login,
+            "isComplete": isComplete,
+        
+        ]
     }
 }
