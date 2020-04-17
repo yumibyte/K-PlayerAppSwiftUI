@@ -11,6 +11,7 @@ import Firebase
 
 struct SignUpScreen: View {
     
+    @State var username: String = ""
     @State var email: String = ""
     @State var password: String = ""
     @State var loading = false
