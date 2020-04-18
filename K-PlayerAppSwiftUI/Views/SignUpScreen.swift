@@ -11,7 +11,7 @@ import Firebase
 
 struct SignUpScreen: View {
     
-    @State var username: String = ""
+    @State var displayName: String = ""
     @State var email: String = ""
     @State var password: String = ""
     @State var loading = false
@@ -19,10 +19,7 @@ struct SignUpScreen: View {
     
     @EnvironmentObject var session: SessionStore
     
-    // Signup method
-    
     func signUp() {
-
         loading = true
         error = false
         session.signUp(email: email, password: password) { (result, error) in
@@ -32,14 +29,13 @@ struct SignUpScreen: View {
             } else {
                 self.email = ""
                 self.password = ""
-                
             }
+            
         }
     }
     
-    
+        
     var body: some View {
-    
     
     //MARK: - UITextFields
         VStack(spacing: 110) {
@@ -97,5 +93,6 @@ struct SignUpScreen: View {
 struct SignUpScreen_Previews: PreviewProvider {
     static var previews: some View {
         SignUpScreen()
+            .environmentObject(SessionStore())
     }
 }

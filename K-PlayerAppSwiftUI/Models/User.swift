@@ -7,16 +7,17 @@
 //
 
 import Foundation
+import Firebase
 
 class User {
     var uid: String
-    var username: String?
+    var displayName: String?
     var email: String?
     var password: String?
     
-    init(uid: String, username: String?, email: String?, password: String?) {
+    init(uid: String, displayName: String?, email: String?, password: String?) {
         self.uid = uid
-        self.username = username
+        self.displayName = displayName
         self.email = email
         self.password = password
     }

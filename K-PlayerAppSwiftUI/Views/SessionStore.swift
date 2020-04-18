@@ -21,27 +21,17 @@ class SessionStore : ObservableObject {
             if let user = user {
                 // if we have a user, create a new user model
                 print("Got user: \(user)")
-                self.session = User(uid: user.uid,displayName: user.displayName, email: user.email)
+                self.session = User(
+                    uid: user.uid,
+                    displayName: user.displayName,
+                    email: user.email,
+                )
             } else {
                 // if we don't have a user, set our session to nil
                 self.session = nil
             }
         }
     }
-    
-    class User {
-        var uid: String
-        var email: String?
-        var displayName: String?
-
-        init(uid: String, displayName: String?, email: String?) {
-            self.uid = uid
-            self.email = email
-            self.displayName = displayName
-        }
-
-    }
-
         func signUp(
             email: String,
             password: String,
