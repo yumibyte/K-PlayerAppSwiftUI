@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Firebase
 
 class User {
     var uid: String
@@ -20,5 +19,6 @@ class User {
         self.displayName = displayName
         self.email = email
         self.password = password
+        
     }
 }
