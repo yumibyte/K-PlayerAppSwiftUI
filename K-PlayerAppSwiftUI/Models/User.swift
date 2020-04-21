@@ -19,5 +19,6 @@ class User {
         self.displayName = displayName
         self.email = email
         self.password = password
+        
     }
 }
