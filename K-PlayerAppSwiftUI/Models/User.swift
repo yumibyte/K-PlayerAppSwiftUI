@@ -12,13 +12,11 @@ class User {
     var uid: String
     var displayName: String?
     var email: String?
-    var password: String?
     
-    init(uid: String, displayName: String?, email: String?, password: String?) {
+    init(uid: String, displayName: String?, email: String?) {
         self.uid = uid
         self.displayName = displayName
         self.email = email
-        self.password = password
         
     }
 }

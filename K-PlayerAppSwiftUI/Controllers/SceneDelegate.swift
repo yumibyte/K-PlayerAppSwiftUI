@@ -8,7 +8,8 @@
 
 import UIKit
 import SwiftUI
-
+import Firebase
+import FirebaseAuth
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -18,10 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let contentView = LoginScreen()
         
-        // conditionally render authentication message if user isn't logged in
-        window?.rootViewController = UIHostingController(
-          rootView: LoadLogin().environmentObject(SessionStore())
-        )
+//        // conditionally render authentication message if user isn't logged in
+//        window?.rootViewController = UIHostingController(
+//          rootView: LoadLogin().environmentObject(SessionStore())
+//        )
         
         
         // Use a UIHostingController as window root view controller.

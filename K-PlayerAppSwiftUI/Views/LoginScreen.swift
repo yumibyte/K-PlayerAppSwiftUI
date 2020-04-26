@@ -16,7 +16,8 @@ struct LoginScreen: View {
     @State var password: String = ""
     @State var loading = false
     @State var error = false
-    
+    @EnvironmentObject var session: SessionStore
+
     //MARK: - Sign in Method
     func signIn() {
         loading = true

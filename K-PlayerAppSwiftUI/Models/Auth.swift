@@ -8,20 +8,20 @@
 
 import Foundation
 import Firebase
-
 class Auth: ObservableObject {
     
     @Published var user: User?
     var handle: AuthStateDidChangeListenerHandle?
+    @EnvironmentObject var session: SessionStore?
+
     
     init() {
         handle = Firebase.Auth.auth().addStateDidChangeListener { (auth, user) in
             if let user = user {
                 self.user = User(
-                    uid: String,
-                    displayName: String?,
-                    email: String?,
-                    password: String?
+                    uid: user.uid,
+                    displayName: user.displayName,
+                    email: user.email
                 )
             } else {
                 self.session = nil
