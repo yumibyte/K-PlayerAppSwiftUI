@@ -6,13 +6,15 @@
 //  Copyright © 2020 Ashley Raigosa. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
 import Firebase
+
 class Auth: ObservableObject {
     
     @Published var user: User?
     var handle: AuthStateDidChangeListenerHandle?
-    @EnvironmentObject var session: SessionStore?
+    
+    @EnvironmentObject var session: SessionStore
 
     
     init() {
@@ -23,9 +25,7 @@ class Auth: ObservableObject {
                     displayName: user.displayName,
                     email: user.email
                 )
-            } else {
-                self.session = nil
-            }
+            } 
         }
     }
 }

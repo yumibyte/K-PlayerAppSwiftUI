@@ -26,6 +26,7 @@ struct SignUpScreen: View {
             self.loading = false
             if error != nil {
                 self.error = true
+                print(self.error)
             } else {
                 self.email = ""
                 self.password = ""
@@ -45,7 +46,7 @@ struct SignUpScreen: View {
                     .foregroundColor(.primary)
                     .offset(y: -30)
             VStack(spacing:10) {
-                TextField("Username", text: $email) .padding()
+                TextField("Username", text: $displayName) .padding()
                 .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                 .scaleEffect(0.85)
                 
