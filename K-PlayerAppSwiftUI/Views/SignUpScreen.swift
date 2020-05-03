@@ -18,7 +18,6 @@ struct SignUpScreen: View {
     @State var error = false
     
     @EnvironmentObject var session: SessionStore
-    
     func signUp() {
         loading = true
         error = false
@@ -53,12 +52,10 @@ struct SignUpScreen: View {
                 TextField("Email", text: $email) .padding()
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                     .scaleEffect(0.85)
-                
                 SecureField("Password", text: $password)
                     .padding() .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                     .scaleEffect(0.85)
-                    
-                    
+                    .environmentObject(self.session)
                 
                 
     //MARK: - Sign up Handling
