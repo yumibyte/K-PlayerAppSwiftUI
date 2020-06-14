@@ -1,6 +1,0 @@
-framework module Pods_K_PlayerAppSwiftUI {
-  umbrella header "Pods-K-PlayerAppSwiftUI-umbrella.h"
-
-  export *
-  module * { export * }
-}

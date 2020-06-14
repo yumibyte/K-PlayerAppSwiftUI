@@ -11,12 +11,15 @@ import Firebase
 
 struct LoginScreen: View {
     
-    @State private var isActive: Bool = false
+    @State private var loginActivity: Bool = false
+    @State private var signUpActivity: Bool = false
     @State var email: String = ""
     @State var password: String = ""
     @State var loading = false
     @State var error = false
     
+    @EnvironmentObject var session: SessionStore
+
     //MARK: - Sign in Method
     func signIn() {
         loading = true
@@ -28,6 +31,9 @@ struct LoginScreen: View {
             } else {
                 self.email = ""
                 self.password = ""
+                // goto front page
+                self.loginActivity = true
+                
             }
         }
     }
@@ -72,18 +78,21 @@ struct LoginScreen: View {
                             .cornerRadius(15.0)
                             
                             .padding()
-
+                        NavigationLink(destination: FullPlaylistScreen(), isActive: $loginActivity) {
+                            EmptyView()
+                        }
+                        
                     }
                     .padding()
                     LabelledDivider(label: "OR", horizontalPadding: 10, color: .gray)
                     
                     
                         
-                    NavigationLink(destination: SignUpScreen(), isActive: self.$isActive) {
+                    NavigationLink(destination: SignUpScreen(), isActive: self.$signUpActivity) {
                         Text("Register")
                     }
                     Button("") {
-                        self.isActive = true
+                        self.signUpActivity = true
                     }
 
                 }

@@ -10,7 +10,8 @@ import SwiftUI
 import Firebase
 
 struct SignUpScreen: View {
-    
+    @State private var isActive: Bool = false
+
     @State var displayName: String = ""
     @State var email: String = ""
     @State var password: String = ""
@@ -25,10 +26,14 @@ struct SignUpScreen: View {
         session.signUp(email: email, password: password) { (result, error) in
             self.loading = false
             if error != nil {
+                print(error)
                 self.error = true
+                
+                print(self.error)
             } else {
                 self.email = ""
                 self.password = ""
+                self.isActive = true
             }
             
         }
@@ -45,24 +50,23 @@ struct SignUpScreen: View {
                     .foregroundColor(.primary)
                     .offset(y: -30)
             VStack(spacing:10) {
-                TextField("Username", text: $email) .padding()
+                TextField("Username", text: $displayName) .padding()
                 .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                 .scaleEffect(0.85)
                 
                 TextField("Email", text: $email) .padding()
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                     .scaleEffect(0.85)
-                
                 SecureField("Password", text: $password)
                     .padding() .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                     .scaleEffect(0.85)
-                    
-                    
+                    .environmentObject(self.session)
                 
                 
     //MARK: - Sign up Handling
+                
                 if (error) {
-                    Text("unable to sign in")
+                    Text("unable to sign up")
                 }
                 
                 
@@ -77,8 +81,12 @@ struct SignUpScreen: View {
                         .cornerRadius(15.0)
                         .padding()
                     
+                    NavigationLink(destination: LoginScreen(), isActive: $isActive) {
+                        EmptyView()
+                    }
                     
                 }
+                
 
                 
             }
@@ -93,6 +101,5 @@ struct SignUpScreen: View {
 struct SignUpScreen_Previews: PreviewProvider {
     static var previews: some View {
         SignUpScreen()
-            .environmentObject(SessionStore())
     }
 }
