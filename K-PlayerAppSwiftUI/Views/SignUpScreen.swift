@@ -10,7 +10,8 @@ import SwiftUI
 import Firebase
 
 struct SignUpScreen: View {
-    
+    @State private var isActive: Bool = false
+
     @State var displayName: String = ""
     @State var email: String = ""
     @State var password: String = ""
@@ -32,6 +33,7 @@ struct SignUpScreen: View {
             } else {
                 self.email = ""
                 self.password = ""
+                self.isActive = true
             }
             
         }
@@ -79,8 +81,12 @@ struct SignUpScreen: View {
                         .cornerRadius(15.0)
                         .padding()
                     
+                    NavigationLink(destination: LoginScreen(), isActive: $isActive) {
+                        EmptyView()
+                    }
                     
                 }
+                
 
                 
             }
