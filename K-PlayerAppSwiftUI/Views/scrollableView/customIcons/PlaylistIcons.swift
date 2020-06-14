@@ -15,10 +15,12 @@ struct PlaylistIcons: View {
     var body: some View {
         VStack(spacing: 16.0) {
             ZStack(alignment:.bottomLeading) {
-                Rectangle()
-                    .frame(width: 250, height: 250)
-                    .cornerRadius(10)
-                    .foregroundColor(.gray)
+                Image(song.coverName)
+                .scaleEffect(0.8)
+
+                .frame(width: 250, height: 250)
+                .cornerRadius(10)
+
                 //fade
                 Rectangle()
                     .frame(width: 200, height: 50)

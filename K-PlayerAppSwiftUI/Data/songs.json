@@ -2,7 +2,7 @@
     {
         "id":1001,
         "artist": "Shakira",
-        "title": "bar",
+        "title": "Shakira Spanish",
         "coverName": "ShakiraSpanish",
         "level": "Level_1",
         "category": "Spanish Videos"
@@ -10,7 +10,7 @@
     {
         "id":1002,
         "artist": "test",
-        "title": "foo",
+        "title": "Shakira English",
         "coverName": "ShakiraIngles",
         "level": "Level_1",
         "category": "Ingles Videos"
