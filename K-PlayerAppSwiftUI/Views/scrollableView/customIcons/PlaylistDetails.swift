@@ -12,25 +12,26 @@ struct PlaylistDetails: View {
     let song: Song
     
     var body: some View {
-        NavigationView {
-            
-            Text("hi")
-        }
         
-
-                //            Text("Shakira -- Sale el sol")
-                //                .padding()
-                //            Text("Duration")
-                //            .padding()
-                //
-                //            Image("Level_1")
+        Form {
+            Section {
+        Text(song.title)
+            }
+        }.navigationBarTitle(Text(song.artist))
+        
+        
+        //            Text("Shakira -- Sale el sol")
+        //                .padding()
+        //            Text("Duration")
+        //            .padding()
+        //
+        //            Image("Level_1")
                 
         
-        
-        
     }
+        
+    
 }
-
 struct PlaylistDetaiils_Previews: PreviewProvider {
     static var previews: some View {
         
