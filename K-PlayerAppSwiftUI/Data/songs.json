@@ -5,22 +5,22 @@
         "title": "Shakira Spanish",
         "coverName": "ShakiraSpanish",
         "level": "Level_1",
-        "category": "Spanish Videos"
+        "category": "English Videos"
     },
     {
         "id":1002,
-        "artist": "test",
+        "artist": "Shakira",
         "title": "Shakira English",
-        "coverName": "ShakiraIngles",
+        "coverName": "ShakiraEnglish",
         "level": "Level_1",
-        "category": "Ingles Videos"
+        "category": "English Videos"
     },
     {
-        "id":1002,
-        "artist": "ye",
-        "title": "dog",
-        "coverName": "ShakiraIngles",
+        "id":1003,
+        "artist": "Ana Gabriel",
+        "title": "Ana Gabriel Spanish",
+        "coverName": "AnaGabrielSpanish",
         "level": "Level_1",
-        "category": "Ingles Videos"
+        "category": "Spanish Videos"
     }
 ]

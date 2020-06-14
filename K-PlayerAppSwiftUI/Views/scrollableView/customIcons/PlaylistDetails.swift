@@ -12,17 +12,21 @@ struct PlaylistDetails: View {
     let song: Song
     
     var body: some View {
-        
-        
-        HStack() {
-            Text("Shakira -- Sale el sol")
-                .padding()
-            Text("Duration")
-            .padding()
-
-            Image("Level_1")
-//
+        NavigationView {
+            
+            Text("hi")
         }
+        
+
+                //            Text("Shakira -- Sale el sol")
+                //                .padding()
+                //            Text("Duration")
+                //            .padding()
+                //
+                //            Image("Level_1")
+                
+        
+        
         
     }
 }

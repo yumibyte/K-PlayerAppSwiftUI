@@ -21,7 +21,6 @@
 		1652AB1E238DD979001C21E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1652AB1C238DD979001C21E2 /* LaunchScreen.storyboard */; };
 		1654E81E245E924700A7D1C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1654E81D245E924700A7D1C8 /* GoogleService-Info.plist */; };
 		1664564B2433038C00B078F8 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664564A2433038C00B078F8 /* SignUpScreen.swift */; };
-		168568CE23F51E0200F7EDB5 /* SongIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168568CD23F51E0200F7EDB5 /* SongIcon.swift */; };
 		16B6EF7824497A6A00D6EA84 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B6EF7724497A6A00D6EA84 /* User.swift */; };
 		16B7A76A23E2B7C90012BFAF /* PlaylistDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B7A76923E2B7C90012BFAF /* PlaylistDetails.swift */; };
 		16BB059423B6B42300E51A00 /* PlaylistIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB059323B6B42300E51A00 /* PlaylistIcons.swift */; };
@@ -51,7 +50,6 @@
 		1652AB1F238DD979001C21E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "../Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		1654E81D245E924700A7D1C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1664564A2433038C00B078F8 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
-		168568CD23F51E0200F7EDB5 /* SongIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongIcon.swift; sourceTree = "<group>"; };
 		16B6EF7724497A6A00D6EA84 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		16B7A76923E2B7C90012BFAF /* PlaylistDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaylistDetails.swift; path = "/Users/ashleyraigosa/Desktop/Programming/Xcode - swift/K-PlayerAppSwiftUI/K-PlayerAppSwiftUI/Views/scrollableView/customIcons/PlaylistDetails.swift"; sourceTree = "<absolute>"; };
 		16BB059323B6B42300E51A00 /* PlaylistIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistIcons.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 			children = (
 				16BB059323B6B42300E51A00 /* PlaylistIcons.swift */,
 				16B7A76923E2B7C90012BFAF /* PlaylistDetails.swift */,
-				168568CD23F51E0200F7EDB5 /* SongIcon.swift */,
 			);
 			path = customIcons;
 			sourceTree = "<group>";
@@ -337,7 +334,6 @@
 				1664564B2433038C00B078F8 /* SignUpScreen.swift in Sources */,
 				1652AB14238DD978001C21E2 /* SceneDelegate.swift in Sources */,
 				1652AB16238DD978001C21E2 /* FullPlaylistScreen.swift in Sources */,
-				168568CE23F51E0200F7EDB5 /* SongIcon.swift in Sources */,
 				16F94FC524234ED4009811A0 /* LoginScreen.swift in Sources */,
 				16E62DB324557AAB00698EE6 /* SessionStore.swift in Sources */,
 				16CF35E723E01E3900833859 /* Data.swift in Sources */,

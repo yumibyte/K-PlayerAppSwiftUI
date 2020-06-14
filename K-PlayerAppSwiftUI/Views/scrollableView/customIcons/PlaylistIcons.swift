@@ -16,8 +16,7 @@ struct PlaylistIcons: View {
         VStack(spacing: 16.0) {
             ZStack(alignment:.bottomLeading) {
                 Image(song.coverName)
-                .scaleEffect(0.8)
-
+                .scaleEffect(0.4)
                 .frame(width: 250, height: 250)
                 .cornerRadius(10)
 
