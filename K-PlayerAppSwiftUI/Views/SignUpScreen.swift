@@ -18,13 +18,16 @@ struct SignUpScreen: View {
     @State var error = false
     
     @EnvironmentObject var session: SessionStore
+    
     func signUp() {
         loading = true
         error = false
         session.signUp(email: email, password: password) { (result, error) in
             self.loading = false
             if error != nil {
+                print(error)
                 self.error = true
+                
                 print(self.error)
             } else {
                 self.email = ""
@@ -59,8 +62,9 @@ struct SignUpScreen: View {
                 
                 
     //MARK: - Sign up Handling
+                
                 if (error) {
-                    Text("unable to sign in")
+                    Text("unable to sign up")
                 }
                 
                 
@@ -91,6 +95,5 @@ struct SignUpScreen: View {
 struct SignUpScreen_Previews: PreviewProvider {
     static var previews: some View {
         SignUpScreen()
-            .environmentObject(SessionStore())
     }
 }
