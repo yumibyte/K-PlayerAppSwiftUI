@@ -10,6 +10,8 @@ import SwiftUI
 
 struct FullPlaylistScreen: View {
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     //categories to be used as key for NavigationView
     var categories:[String:[Song]] {
         .init(
@@ -21,18 +23,18 @@ struct FullPlaylistScreen: View {
     
     var body: some View {
         
-        NavigationView {
 
-            List(categories.keys.sorted(), id: \String.self) {key in
-                PlaylistRow(categoryName: "\(key)".uppercased(), songs: self.categories[key]!)
-                    .frame(height: 375)
-                    .padding(.bottom)
-            }
-            .navigationBarTitle(Text("LP-Playlists"))
+        List(categories.keys.sorted(), id: \String.self) {key in
+            PlaylistRow(categoryName: "\(key)".uppercased(), songs: self.categories[key]!)
+                .frame(height: 375)
+                .padding(.bottom)
         }
+        .navigationBarTitle(Text("LP-Playlists"))
+        .navigationBarBackButtonHidden(true)
+    }
     
         
-    }
+    
 }
 
 struct FullPlaylistScreen_Previews: PreviewProvider {

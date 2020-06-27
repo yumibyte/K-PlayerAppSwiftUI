@@ -34,7 +34,8 @@ struct PlaylistRow: View {
 
                     }
                 }
-            }
+            }.buttonStyle(PlainButtonStyle())
+
             
         }
     }
@@ -42,6 +43,6 @@ struct PlaylistRow: View {
 
 struct PlaylistRow_Previews: PreviewProvider {
     static var previews: some View {
-        PlaylistRow(categoryName: "Ingles Videos", songs: songData)
+        PlaylistRow(categoryName: "English Videos", songs: songData)
     }
 }

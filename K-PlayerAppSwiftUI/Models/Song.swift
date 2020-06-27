@@ -19,7 +19,7 @@ struct Song: Hashable, Codable, Identifiable {
 //    var video:
     
     enum Category: String, Codable, CaseIterable, Hashable {
-        case inglesVideos = "Ingles Videos"
+        case inglesVideos = "English Videos"
         case spanishVideos = "Spanish Videos"
     }
     
