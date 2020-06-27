@@ -17,6 +17,7 @@ struct LoginScreen: View {
     @State var password: String = ""
     @State var loading = false
     @State var error = false
+    @State var errorMessage: String = ""
     
     @EnvironmentObject var session: SessionStore
 
@@ -27,7 +28,10 @@ struct LoginScreen: View {
         session.signIn(email: email, password: password) { (result, error) in
             self.loading = false
             if error != nil {
+                
+                self.errorMessage = error!.localizedDescription
                 self.error = true
+                
             } else {
                 self.email = ""
                 self.password = ""
@@ -55,16 +59,17 @@ struct LoginScreen: View {
                     TextField("Email", text: $email) .padding()
                         .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                         .scaleEffect(0.85)
-
+                    
+                    // Login Handling
+                    if (error) {
+                        Text(errorMessage)
+                    }
+                    
                     SecureField("Password", text: $password)
                         .padding() .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                         .scaleEffect(0.85)
 
                     
-                    //MARK: - Login Handling
-                    if (error) {
-                        Text("unable to sign in")
-                    }
                     
                     //MARK: - Login Options
                     Button(action: signIn) {
