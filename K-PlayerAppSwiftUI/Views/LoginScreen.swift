@@ -56,18 +56,25 @@ struct LoginScreen: View {
                         .padding()
                         .offset(y: -30)
                 VStack(spacing: 10) {
+                    
                     TextField("Email", text: $email) .padding()
                         .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                         .scaleEffect(0.85)
                     
-                    // Login Handling
-                    if (error) {
-                        Text(errorMessage)
-                    }
-                    
                     SecureField("Password", text: $password)
                         .padding() .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                         .scaleEffect(0.85)
+                    // Login Handling
+                    if (error) {
+                        Text(errorMessage)
+                            
+                            .lineLimit(nil)
+                            .lineSpacing(5)
+                            .scaleEffect(0.85)
+                            .foregroundColor(.red)
+                            .offset(y: 10)
+                    }
+                    
 
                     
                     
