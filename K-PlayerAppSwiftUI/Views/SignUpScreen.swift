@@ -53,10 +53,14 @@ struct SignUpScreen: View {
                 TextField("Username", text: $displayName) .padding()
                 .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                 .scaleEffect(0.85)
+                .autocapitalization(.none)
+                .disableAutocorrection(.none)
                 
                 TextField("Email", text: $email) .padding()
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                     .scaleEffect(0.85)
+                .autocapitalization(.none)
+
                 SecureField("Password", text: $password)
                     .padding() .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray, lineWidth: 1.0))
                     .scaleEffect(0.85)

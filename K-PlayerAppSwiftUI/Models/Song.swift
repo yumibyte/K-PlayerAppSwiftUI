@@ -9,18 +9,27 @@
 import SwiftUI
 
 struct Song: Hashable, Codable, Identifiable {
+
     var id: Int
     var artist: String
     var title: String
     var coverName: String
     var level: String
     var category: Category
+    var songList: [IndividualSongParameters]
     
-//    var video:
+    struct IndividualSongParameters: Hashable, Codable {
+        
+        var songTitle: String
+        var songTotalTime: String
+        var youtubeURL: String
+    }
     
     enum Category: String, Codable, CaseIterable, Hashable {
         case inglesVideos = "English Videos"
         case spanishVideos = "Spanish Videos"
     }
+    
+    
     
 }
