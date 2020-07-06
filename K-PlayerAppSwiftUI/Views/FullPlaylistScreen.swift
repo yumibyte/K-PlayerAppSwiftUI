@@ -22,8 +22,7 @@ struct FullPlaylistScreen: View {
     
     
     var body: some View {
-        
-
+          
         List(categories.keys.sorted(), id: \String.self) {key in
             PlaylistRow(categoryName: "\(key)".uppercased(), songs: self.categories[key]!)
                 .frame(height: 375)
