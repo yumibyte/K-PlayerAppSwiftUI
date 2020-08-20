@@ -16,7 +16,6 @@ struct Song: Hashable, Codable, Identifiable {
     var coverName: String
     var level: String
     var category: Category
-    var songList: [IndividualSongParameters]
     
     struct IndividualSongParameters: Hashable, Codable {
         

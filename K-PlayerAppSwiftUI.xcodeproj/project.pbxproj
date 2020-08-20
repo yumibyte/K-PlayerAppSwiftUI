@@ -22,6 +22,8 @@
 		1664564B2433038C00B078F8 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1664564A2433038C00B078F8 /* SignUpScreen.swift */; };
 		1666450024E26B1900B62E5E /* PlaylistDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166644FF24E26B1900B62E5E /* PlaylistDetails.swift */; };
 		1666450224E26B5800B62E5E /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1666450124E26B5800B62E5E /* ButtonView.swift */; };
+		16B3FC3324EE6ABE000C31B6 /* CustomSafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3FC3224EE6ABE000C31B6 /* CustomSafariViewController.swift */; };
+		16B3FC3524EE6CAD000C31B6 /* WebViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B3FC3424EE6CAD000C31B6 /* WebViewRepresentable.swift */; };
 		16B6EF7824497A6A00D6EA84 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B6EF7724497A6A00D6EA84 /* User.swift */; };
 		16BB059423B6B42300E51A00 /* PlaylistIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB059323B6B42300E51A00 /* PlaylistIcons.swift */; };
 		16C515FE2495A02C003B112A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C515FD2495A02C003B112A /* ContentView.swift */; };
@@ -51,6 +53,8 @@
 		1664564A2433038C00B078F8 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		166644FF24E26B1900B62E5E /* PlaylistDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetails.swift; sourceTree = "<group>"; };
 		1666450124E26B5800B62E5E /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		16B3FC3224EE6ABE000C31B6 /* CustomSafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSafariViewController.swift; sourceTree = "<group>"; };
+		16B3FC3424EE6CAD000C31B6 /* WebViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewRepresentable.swift; sourceTree = "<group>"; };
 		16B6EF7724497A6A00D6EA84 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		16BB059323B6B42300E51A00 /* PlaylistIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistIcons.swift; sourceTree = "<group>"; };
 		16C515FD2495A02C003B112A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				16C515FD2495A02C003B112A /* ContentView.swift */,
+				16B3FC3224EE6ABE000C31B6 /* CustomSafariViewController.swift */,
+				16B3FC3424EE6CAD000C31B6 /* WebViewRepresentable.swift */,
 				1652AB1C238DD979001C21E2 /* LaunchScreen.storyboard */,
 				1652AB15238DD978001C21E2 /* FullPlaylistScreen.swift */,
 				16F94FC424234ED4009811A0 /* LoginScreen.swift */,
@@ -328,7 +334,9 @@
 				16BB059423B6B42300E51A00 /* PlaylistIcons.swift in Sources */,
 				161528D0244D88B500C7B0D4 /* Auth.swift in Sources */,
 				16C515FE2495A02C003B112A /* ContentView.swift in Sources */,
+				16B3FC3524EE6CAD000C31B6 /* WebViewRepresentable.swift in Sources */,
 				160A625C23C4437F00790655 /* PlaylistRow.swift in Sources */,
+				16B3FC3324EE6ABE000C31B6 /* CustomSafariViewController.swift in Sources */,
 				1652AB12238DD978001C21E2 /* AppDelegate.swift in Sources */,
 				1664564B2433038C00B078F8 /* SignUpScreen.swift in Sources */,
 				1652AB14238DD978001C21E2 /* SceneDelegate.swift in Sources */,
